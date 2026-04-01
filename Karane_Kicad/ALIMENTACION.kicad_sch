@@ -1664,20 +1664,18 @@
 					)
 				)
 			)
-			(symbol "SQJ951EP-T1_BE3_0_1"
+			(symbol "SQJ951EP-T1_BE3_1_1"
 				(rectangle
 					(start -7.62 10.16)
 					(end 7.62 -10.16)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "SQJ951EP-T1_BE3_1_1"
 				(pin passive line
 					(at -10.16 7.62 0)
 					(length 2.54)
