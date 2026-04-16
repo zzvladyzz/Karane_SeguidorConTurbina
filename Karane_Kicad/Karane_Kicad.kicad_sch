@@ -15001,7 +15001,7 @@
 				(justify left top)
 			)
 		)
-		(pin "VBATT" output
+		(pin "VBATT" input
 			(at 71.12 118.11 0)
 			(uuid "59543c82-7f1b-4c85-922a-b66e059acbbb")
 			(effects
