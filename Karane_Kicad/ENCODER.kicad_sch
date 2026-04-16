@@ -219,20 +219,18 @@
 					)
 				)
 			)
-			(symbol "AS5145B_0_1"
+			(symbol "AS5145B_1_1"
 				(rectangle
 					(start -15.24 10.16)
 					(end 16.51 -10.16)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "AS5145B_1_1"
 				(pin output line
 					(at -17.78 8.89 0)
 					(length 2.54)
@@ -1617,7 +1615,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "007bec14-dbc9-4110-b42d-218e73e0a2d2")
-		(property "Reference" "C31"
+		(property "Reference" "C39"
 			(at 93.98 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1681,7 +1679,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "C31")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -1699,7 +1697,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0e46931b-5dae-40dd-8f3a-646055753c3c")
-		(property "Reference" "U25"
+		(property "Reference" "U27"
 			(at 83.185 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1803,7 +1801,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "U25")
+					(reference "U27")
 					(unit 1)
 				)
 			)
@@ -1821,7 +1819,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2bf8e26c-7a50-464e-a19a-c128c82a7e08")
-		(property "Reference" "J12"
+		(property "Reference" "J15"
 			(at 87.63 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1894,7 +1892,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "J12")
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -1911,7 +1909,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83c3305a-6455-48d1-aee2-af929a56f05c")
-		(property "Reference" "C29"
+		(property "Reference" "C38"
 			(at 80.01 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1975,7 +1973,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "C29")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -1993,7 +1991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a228e8e-5d97-4d2b-bbf9-65bd763cb6e4")
-		(property "Reference" "J13"
+		(property "Reference" "J16"
 			(at 208.28 72.3899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2066,7 +2064,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "J13")
+					(reference "J16")
 					(unit 1)
 				)
 			)
@@ -2083,7 +2081,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a9e955f2-78b8-4747-82a4-f9e6cfadcd07")
-		(property "Reference" "C32"
+		(property "Reference" "C40"
 			(at 193.04 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2147,7 +2145,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "C32")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -2164,7 +2162,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b7edd82f-04b5-4825-89a9-864f30c9e8be")
-		(property "Reference" "C33"
+		(property "Reference" "C41"
 			(at 207.01 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2228,7 +2226,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "C33")
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -2246,7 +2244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe0d3419-32d8-4579-9c9e-c0277d694e87")
-		(property "Reference" "U26"
+		(property "Reference" "U28"
 			(at 198.755 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2350,7 +2348,7 @@
 		(instances
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
-					(reference "U26")
+					(reference "U28")
 					(unit 1)
 				)
 			)
