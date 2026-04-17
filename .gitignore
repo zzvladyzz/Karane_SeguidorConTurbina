@@ -1,15 +1,23 @@
-Karane_STM32/Debug/
-Karane_STM32/Release/
-Karane_STM32/.settings/
-Karane_STM32/*.launch
-Karane_STM32/*.o
-Karane_STM32/*.elf
-Karane_STM32/*.bin
-Karane_STM32/*.map
+Karane_STM/Debug/
+Karane_STM/Release/
+Karane_STM/.settings/
+Karane_STM/*.launch
+Karane_STM/*.o
+Karane_STM/*.elf
+Karane_STM/*.bin
+Karane_STM/*.map
 *.o
 *.su
 *.elf
 
+IndaV2_STM/Debug/
+IndaV2_STM/Release/
+IndaV2_STM/.settings/
+IndaV2_STM/*.launch
+IndaV2_STM/*.o
+IndaV2_STM/*.elf
+IndaV2_STM/*.bin
+IndaV2_STM/*.map
 
 
 Karane_Kicad/*.bak
