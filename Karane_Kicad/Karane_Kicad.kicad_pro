@@ -201,7 +201,7 @@
         0.3,
         0.5,
         1.0,
-        2.5
+        1.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -681,7 +681,7 @@
         "uuid": "65dfbecc-0fbf-480c-951c-b0d4a210bc14"
       }
     ],
-    "used_designators": "",
+    "used_designators": "C44",
     "variants": []
   },
   "sheets": [
