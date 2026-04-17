@@ -3097,12 +3097,6 @@
 		(uuid "a54854da-09b6-4edd-86f9-a423ad01bb82")
 	)
 	(junction
-		(at 193.04 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc9138f1-5b0b-40ad-a22e-cb76c8927809")
-	)
-	(junction
 		(at 187.96 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3526,16 +3520,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 113.03) (xy 193.04 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "550b8370-3c1a-4123-9bed-be3844e071d1")
-	)
-	(wire
-		(pts
 			(xy 237.49 129.54) (xy 247.65 129.54)
 		)
 		(stroke
@@ -3866,7 +3850,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 118.11) (xy 187.96 118.11)
+			(xy 187.96 118.11) (xy 198.12 118.11)
 		)
 		(stroke
 			(width 0)
@@ -3883,16 +3867,6 @@
 			(type default)
 		)
 		(uuid "91481753-d391-46ae-81d7-875e426b0cf1")
-	)
-	(wire
-		(pts
-			(xy 198.12 118.11) (xy 193.04 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98da5be6-37b6-493b-81b8-f3d5df930035")
 	)
 	(wire
 		(pts
@@ -6857,6 +6831,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 222.25 120.65 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba8f0132-ba32-49f0-9ccd-f5857c0d938f")
+		(property "Reference" "#FLG05"
+			(at 224.155 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 226.06 120.6499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 222.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 222.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 222.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efc3f328-6d0a-4d8d-9b8e-377d5fa556d2")
+		)
+		(instances
+			(project "Karane_Kicad"
+				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 213.36 73.66 0)
 		(unit 1)
@@ -7739,84 +7792,6 @@
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 193.04 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ea63729a-2d4a-44ad-b443-369d126107ee")
-		(property "Reference" "#FLG05"
-			(at 193.04 111.125 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 193.04 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 193.04 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1b8898b6-ad89-4579-b841-a634a464b151")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)
