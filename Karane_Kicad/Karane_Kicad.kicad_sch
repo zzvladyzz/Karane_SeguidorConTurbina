@@ -5495,6 +5495,12 @@
 		(uuid "006e492f-2eb3-406e-8fd6-8e120e06c5fa")
 	)
 	(junction
+		(at 317.5 242.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0eed0991-cc4f-46f8-8089-8dbd75676972")
+	)
+	(junction
 		(at 323.85 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5547,6 +5553,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44e8bd3d-4d8c-4b03-aeec-7128795f1920")
+	)
+	(junction
+		(at 317.5 229.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4682e017-5d88-4be6-ac06-c01036f97027")
+	)
+	(junction
+		(at 317.5 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46de78e8-b7c9-46ae-bc53-7de74a7a31c0")
 	)
 	(junction
 		(at 35.56 36.83)
@@ -5751,6 +5769,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f6829ba2-f0b1-488c-beb2-bc5212614d22")
+	)
+	(junction
+		(at 317.5 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f75da97e-e4dd-4be7-bf05-8701426c793f")
 	)
 	(junction
 		(at 139.7 185.42)
@@ -5999,6 +6023,16 @@
 			(type default)
 		)
 		(uuid "135a32b0-3fc9-4d0f-8e96-54cf6fb330eb")
+	)
+	(wire
+		(pts
+			(xy 317.5 236.22) (xy 317.5 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13981ac1-dc8e-4a9c-b2d6-b157fc2bf4a6")
 	)
 	(wire
 		(pts
@@ -6262,6 +6296,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 223.52) (xy 317.5 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f3d3cc5-9b47-4522-95ff-9e9fb8998c9f")
+	)
+	(wire
+		(pts
 			(xy 336.55 44.45) (xy 336.55 39.37)
 		)
 		(stroke
@@ -6289,6 +6333,16 @@
 			(type default)
 		)
 		(uuid "3166a254-485b-49f5-9cc4-7ace80e89e65")
+	)
+	(wire
+		(pts
+			(xy 317.5 242.57) (xy 317.5 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32ec48c0-1d58-4d67-8583-3ae7677fef53")
 	)
 	(wire
 		(pts
@@ -7102,6 +7156,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 236.22) (xy 317.5 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ea6dede-c7c9-4e6b-a2e5-813697b6320b")
+	)
+	(wire
+		(pts
 			(xy 35.56 24.13) (xy 35.56 26.67)
 		)
 		(stroke
@@ -7129,6 +7193,16 @@
 			(type default)
 		)
 		(uuid "71face75-5390-4056-91c5-537563aff28e")
+	)
+	(wire
+		(pts
+			(xy 317.5 242.57) (xy 312.42 242.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7407859a-596a-4ca5-8197-78c58f3a8aac")
 	)
 	(wire
 		(pts
@@ -7339,6 +7413,16 @@
 			(type default)
 		)
 		(uuid "86ebdf9a-7401-4eaf-a1f1-bd7114b2b205")
+	)
+	(wire
+		(pts
+			(xy 317.5 229.87) (xy 317.5 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86f30aaa-9020-4f59-8c48-a7b028d32408")
 	)
 	(wire
 		(pts
@@ -7852,6 +7936,16 @@
 	)
 	(wire
 		(pts
+			(xy 317.5 223.52) (xy 317.5 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3aa287d-d2c5-4b48-a116-8c59949a2f8d")
+	)
+	(wire
+		(pts
 			(xy 80.01 35.56) (xy 83.82 35.56)
 		)
 		(stroke
@@ -8239,6 +8333,16 @@
 			(type default)
 		)
 		(uuid "d5c1adc8-d0e8-45bd-ae6e-5d2f4cb049db")
+	)
+	(wire
+		(pts
+			(xy 312.42 229.87) (xy 317.5 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6f29e70-f206-41f4-90dd-7b4d51ae70c0")
 	)
 	(wire
 		(pts
@@ -13095,6 +13199,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 309.88 229.87 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58e66db8-06e7-4019-8fcf-188d1b67ea8f")
+		(property "Reference" "H6"
+			(at 308.61 223.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 308.61 226.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
+			(at 309.88 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 309.88 229.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d71af36-ed05-4443-b102-0c2b091e2133")
+		)
+		(instances
+			(project "Karane_Kicad"
+				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:AO3400A")
 		(at 372.11 123.19 0)
 		(unit 1)
@@ -15045,6 +15226,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 317.5 223.52 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87fbc557-c812-48e8-b0d6-1861f7c1a679")
+		(property "Reference" "#FLG011"
+			(at 319.405 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 321.31 223.5199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 317.5 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af760601-4682-4409-ba20-38ca3482e13b")
+		)
+		(instances
+			(project "Karane_Kicad"
+				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
+					(reference "#FLG011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 139.7 259.08 0)
 		(unit 1)
@@ -15875,6 +16135,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 317.5 246.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a10e0879-9359-4aa8-b055-381065f4e973")
+		(property "Reference" "#PWR063"
+			(at 317.5 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 317.5 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 317.5 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 317.5 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 317.5 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b4210fee-3959-4bb2-809b-7b09bf6ae4b3")
+		)
+		(instances
+			(project "Karane_Kicad"
+				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 374.65 139.7 0)
 		(unit 1)
 		(body_style 1)
@@ -16025,6 +16363,83 @@
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 309.88 236.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3cb2424-770f-4c7f-a0a4-4cb127c64577")
+		(property "Reference" "H7"
+			(at 308.61 229.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 308.61 232.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
+			(at 309.88 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 309.88 236.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de03d4d6-208d-4156-be36-cdc104d0212a")
+		)
+		(instances
+			(project "Karane_Kicad"
+				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
+					(reference "H7")
 					(unit 1)
 				)
 			)
@@ -16851,6 +17266,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 309.88 242.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc246ac1-c2b7-4638-b049-183f3ea901ee")
+		(property "Reference" "H8"
+			(at 308.61 236.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 308.61 238.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
+			(at 309.88 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 309.88 242.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4cdd44a-39ed-4caf-b827-8965e2903c69")
+		)
+		(instances
+			(project "Karane_Kicad"
+				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 97.79 177.8 0)
 		(unit 1)
@@ -17392,6 +17884,83 @@
 			(project "Karane_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 309.88 223.52 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c91b10b2-55dd-40c4-ae09-c3129be117fc")
+		(property "Reference" "H5"
+			(at 308.61 217.17 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 308.61 219.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_ISO14580_Pad"
+			(at 309.88 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 309.88 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 309.88 223.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "067943bb-f3d1-4ace-8233-a9843a37c7cc")
+		)
+		(instances
+			(project "Karane_Kicad"
+				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
+					(reference "H5")
 					(unit 1)
 				)
 			)
