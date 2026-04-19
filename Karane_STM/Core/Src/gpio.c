@@ -67,11 +67,11 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LED_Alarma_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : ENCC_MR_Pin */
-  GPIO_InitStruct.Pin = ENCC_MR_Pin;
+  /*Configure GPIO pins : PULSADOR_Pin ENCC_MR_Pin */
+  GPIO_InitStruct.Pin = PULSADOR_Pin|ENCC_MR_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(ENCC_MR_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pin : ENCC_ML_Pin */
   GPIO_InitStruct.Pin = ENCC_ML_Pin;

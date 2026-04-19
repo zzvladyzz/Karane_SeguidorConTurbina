@@ -59,8 +59,16 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_Alarma_Pin GPIO_PIN_13
 #define LED_Alarma_GPIO_Port GPIOC
+#define PULSADOR_Pin GPIO_PIN_14
+#define PULSADOR_GPIO_Port GPIOC
 #define ENCC_MR_Pin GPIO_PIN_15
 #define ENCC_MR_GPIO_Port GPIOC
+#define AMP_ML_Pin GPIO_PIN_2
+#define AMP_ML_GPIO_Port GPIOA
+#define AMP_MR_Pin GPIO_PIN_3
+#define AMP_MR_GPIO_Port GPIOA
+#define VOLT_Pin GPIO_PIN_4
+#define VOLT_GPIO_Port GPIOA
 #define IN_MUX_Pin GPIO_PIN_5
 #define IN_MUX_GPIO_Port GPIOA
 #define ENCC_ML_Pin GPIO_PIN_0
@@ -75,6 +83,8 @@ void Error_Handler(void);
 #define S2_MUX_GPIO_Port GPIOB
 #define SPI_NSS_Pin GPIO_PIN_12
 #define SPI_NSS_GPIO_Port GPIOB
+#define PWM_FAN_Pin GPIO_PIN_8
+#define PWM_FAN_GPIO_Port GPIOA
 #define EN_SENSORES_Pin GPIO_PIN_11
 #define EN_SENSORES_GPIO_Port GPIOA
 #define LED_RR_Pin GPIO_PIN_12

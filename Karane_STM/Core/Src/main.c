@@ -29,7 +29,7 @@
 #include "stdio.h"
 #include "string.h"
 #include "MPU6500_LIB.h"
-
+#include "MOTORES_LIB.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -37,6 +37,8 @@
 MPU6500_Init_Values_t 	MPU6500_Datos; //Iniciamos donde se guardaran todos los datos a leer
 MPU6500_status_e	MPU6500_Status;
 MPU6500_Init_float_t	MPU6500_Conv;
+
+Motores_Init Motor;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -112,6 +114,8 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM3_Init();
   MX_ADC1_Init();
+  MX_ADC2_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   MPU6500_Status=MPU6500_Init(&MPU6500_Datos,10,DPS250,G2);
   if (MPU6500_Status==MPU6500_fail) {
@@ -121,26 +125,33 @@ int main(void)
   				HAL_Delay(500);
   		}
  }
-  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
-  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
-  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
-  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
+  Inicializar_Motores(&Motor);
 
-  __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_1,200);
-  __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_2,00);
-  __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_3,00);
-  __HAL_TIM_SET_COMPARE(&htim4,TIM_CHANNEL_4,200);
-  HAL_GPIO_WritePin(MOTOR_EN_GPIO_Port, MOTOR_EN_Pin, GPIO_PIN_RESET);
   HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
   HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
+HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,1000);
+  HAL_Delay(3000);
 
-  HAL_Delay(2000);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {/*
+  {
+	  if(HAL_GPIO_ReadPin(PULSADOR_GPIO_Port, PULSADOR_Pin)==1)
+	  {
+		  Motor.ENABLE=true;
+		    Motor.PWM_ML=150;
+		    Motor.PWM_MR=-150;
+
+		    PWM_Motores(&Motor);
+		    HAL_Delay(2000);
+		    Motor.ENABLE=false;
+		    		    PWM_Motores(&Motor);
+
+	  }
+	  /*
 	  MPU6500_Read(&MPU6500_Datos);
 	  	  MPU6500_Conv=MPU6500_Converter(&MPU6500_Datos, DPS250_CONV, G2_CONV);
 
@@ -187,11 +198,11 @@ int main(void)
  HAL_Delay(300);*/
 
 
-	  HAL_GPIO_WritePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin, 1);
+	  HAL_GPIO_WritePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin, 0);
 	  //HAL_GPIO_TogglePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin);
 	  HAL_GPIO_TogglePin(LED_Alarma_GPIO_Port, LED_Alarma_Pin);
 
-	  for (uint8_t var = 0; var < 16; ++var) {
+	 /* for (uint8_t var = 0; var < 16; ++var) {
 
 
 		  HAL_GPIO_WritePin(S0_MUX_GPIO_Port, S0_MUX_Pin, var&1);
@@ -210,7 +221,7 @@ sprintf(bufferTxt,"\r\n ");
 	  	    // 4. Detener el ADC
 	  	    HAL_ADC_Stop(&hadc1);
 HAL_Delay(500);
-
+*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
