@@ -55,10 +55,10 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, S0_MUX_Pin|S1_MUX_Pin|S3_MUX_Pin|S2_MUX_Pin
-                          |SPI_NSS_Pin|LED_LR_Pin|LED_LL_Pin|MOTOR_EN_Pin, GPIO_PIN_RESET);
+                          |SPI_NSS_Pin|LED_B_Pin|LED_A_Pin|MOTOR_EN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, EN_SENSORES_Pin|LED_RR_Pin|LED_RL_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, EN_SENSORES_Pin|LED_D_Pin|LED_C_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : LED_Alarma_Pin */
   GPIO_InitStruct.Pin = LED_Alarma_Pin;
@@ -80,16 +80,16 @@ void MX_GPIO_Init(void)
   HAL_GPIO_Init(ENCC_ML_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : S0_MUX_Pin S1_MUX_Pin S3_MUX_Pin S2_MUX_Pin
-                           SPI_NSS_Pin LED_LR_Pin LED_LL_Pin MOTOR_EN_Pin */
+                           SPI_NSS_Pin LED_B_Pin LED_A_Pin MOTOR_EN_Pin */
   GPIO_InitStruct.Pin = S0_MUX_Pin|S1_MUX_Pin|S3_MUX_Pin|S2_MUX_Pin
-                          |SPI_NSS_Pin|LED_LR_Pin|LED_LL_Pin|MOTOR_EN_Pin;
+                          |SPI_NSS_Pin|LED_B_Pin|LED_A_Pin|MOTOR_EN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : EN_SENSORES_Pin LED_RR_Pin LED_RL_Pin */
-  GPIO_InitStruct.Pin = EN_SENSORES_Pin|LED_RR_Pin|LED_RL_Pin;
+  /*Configure GPIO pins : EN_SENSORES_Pin LED_D_Pin LED_C_Pin */
+  GPIO_InitStruct.Pin = EN_SENSORES_Pin|LED_D_Pin|LED_C_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

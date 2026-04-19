@@ -34,10 +34,26 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+typedef struct
+{
+	float	kp;
+	float	ki;
+	float	kd;
+	float	ultimoError;
+	float	integral;
+	float	winup;
+	float	PWM_Maximo;
+
+}PID;
+
 MPU6500_Init_Values_t 	MPU6500_Datos; //Iniciamos donde se guardaran todos los datos a leer
 MPU6500_status_e	MPU6500_Status;
 MPU6500_Init_float_t	MPU6500_Conv;
 
+
+PID	PID_ML=		{0.05,0,0	,0,0,200,400};
+PID	PID_MR=		{0.05,0,0	,0,0,200,400};
+PID PID_Linea=	{1.5,0,0	,0,0,200,400};
 Motores_Init Motor;
 /* USER CODE END PTD */
 
@@ -69,6 +85,9 @@ long valor=0;
 unsigned long peso=0;
 bool	flagRegleta=false;
 
+uint32_t valoresADC[3];
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -76,6 +95,8 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void Leer_sensores(bool enSensores);
 void Inicializar_Sistema();
+uint32_t ADC_leer_Canal(uint32_t canal);
+float funcion_calcularPID(PID* pid,int16_t setpoint,int16_t actual,float dt);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -123,7 +144,10 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   Inicializar_Sistema();
-bool trash_estado=true;
+  bool IniciarPID=false;
+  uint32_t Tiempo_Anterior_PID=0;
+  uint32_t Tiempo_Anterior_ADC=0;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -132,70 +156,86 @@ bool trash_estado=true;
   {
 	  if(HAL_GPIO_ReadPin(PULSADOR_GPIO_Port, PULSADOR_Pin)==1)
 	  {
-		  trash_estado=false;
-		  /*
-		  Motor.ENABLE=true;
-		    Motor.PWM_ML=150;
-		    Motor.PWM_MR=150;
+		  //IniciarPID=true;
 
-		    PWM_Motores(&Motor);
-		    HAL_Delay(2000);
-		    Motor.ENABLE=false;
-		    		    PWM_Motores(&Motor);
-		    		  	int32_t encoder_valueA = __HAL_TIM_GET_COUNTER(&htim2);
-		    		  	int32_t encoder_valueB = __HAL_TIM_GET_COUNTER(&htim3);
-		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueA);
-		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueB);
-		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-		    		  	sprintf(bufferTxt,"\r\n ");
-		    		  		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-		    		  		  __HAL_TIM_SET_COUNTER(&htim2,0);
-		    		  		  __HAL_TIM_SET_COUNTER(&htim3,0);
+		  HAL_GPIO_WritePin(LED_A_GPIO_Port, LED_A_Pin, 1);
+		  HAL_Delay(1000);
+		  for (int var = 1000; var < 1400; var+=20) {
+		  		PWM_Brushless(var);
+		  		HAL_Delay(300);
+		  	}
+		  for (int var = 80; var < 84; var+=2) {
 
-*/
+			  Motor.ENABLE=true;
+
+			  valoresADC[0]=ADC_leer_Canal(2);
+			  valoresADC[1]=ADC_leer_Canal(3);
+			  valoresADC[2]=ADC_leer_Canal(4);
+			  float voltajeADC = (valoresADC[2] * 3.5f) / 4095.0f;
+
+			  float voltaje = voltajeADC*3.1526;
+
+			  int16_t	pwmm=(int16_t)925/voltaje;//950 por 0.90v *1000 arr para pwm necesario hacerlo para cada uno
+			  // ML 1000 y MR 900a 950
+			  Motor.PWM_ML=pwmm;
+			  Motor.PWM_MR=pwmm;
+
+				  PWM_Motores(&Motor);
+		  sprintf(bufferTxt," Adc= %ld ",valoresADC[2]);
+		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+		  sprintf(bufferTxt," volt= %0.4f ",voltaje);
+		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+		  sprintf(bufferTxt," volt= %d ",pwmm);
+		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+
+		  sprintf(bufferTxt,"\r\n ");
+		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+		  HAL_Delay(500);
+		  }
+		  HAL_GPIO_WritePin(LED_A_GPIO_Port, LED_A_Pin, 0);
+		  Motor.PWM_ML=0;
+		  Motor.PWM_MR=0;
+
+		  PWM_Motores(&Motor);
 	  }
-	  int32_t encoder_valueA = __HAL_TIM_GET_COUNTER(&htim2);
-	  		    		  	int32_t encoder_valueB = __HAL_TIM_GET_COUNTER(&htim3);
-	  		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueA);
-	  		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-	  		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueB);
-	  		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-	  		    		  	sprintf(bufferTxt,"\r\n ");
-	  		    		  		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-HAL_Delay(500);
-/*
-	  MPU6500_Read(&MPU6500_Datos);
-	  	  MPU6500_Conv=MPU6500_Converter(&MPU6500_Datos, DPS250_CONV, G2_CONV);
-
-	  	sprintf(bufferTxt," Gx= %.2f ",MPU6500_Conv.MPU6500_floatGX);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-
-	  	sprintf(bufferTxt," Gy= %.2f ",MPU6500_Conv.MPU6500_floatGY);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-
-	  	sprintf(bufferTxt," Gz= %.2f ",MPU6500_Conv.MPU6500_floatGZ);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-
-	  	sprintf(bufferTxt," Ax= %.2f ",MPU6500_Conv.MPU6500_floatAX);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-
-	  	sprintf(bufferTxt," Ay= %.2f ",MPU6500_Conv.MPU6500_floatAY);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-
-	  	sprintf(bufferTxt," Az= %.2f \r\n",MPU6500_Conv.MPU6500_floatAZ);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-		sprintf(bufferTxt,"\r\n ");
-			    		  		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-HAL_Delay(200);*/
-
-
-	  Leer_sensores(trash_estado);
-	  if(flagRegleta==true)
+	  //int32_t encoder_valueA = __HAL_TIM_GET_COUNTER(&htim2);
+	  //int32_t encoder_valueB = __HAL_TIM_GET_COUNTER(&htim3);
+	  if(HAL_GetTick()-Tiempo_Anterior_ADC>200)
 	  {
-		  flagRegleta=false;
+		  valoresADC[0]=ADC_leer_Canal(2);
+		  valoresADC[1]=ADC_leer_Canal(3);
+		  valoresADC[2]=ADC_leer_Canal(4);
+		  Tiempo_Anterior_ADC=HAL_GetTick();
 	  }
-	  HAL_Delay(5);
+
+	  Leer_sensores(IniciarPID);
+
+
+
+
+
+	  if(IniciarPID==true)
+	  {
+		  if(HAL_GetTick()-Tiempo_Anterior_PID>19)
+		  {
+			  float_t linea=funcion_calcularPID(&PID_Linea, 500, UltimaPosicion, 19);
+			  /// positivo mr+++ y ml---
+
+			  sprintf(bufferTxt," A1= %0.3f ",linea);
+			  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+			  sprintf(bufferTxt," A2= %d ",UltimaPosicion);
+			  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+
+			  sprintf(bufferTxt,"\r\n ");
+			  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+
+
+			  HAL_Delay(10);
+		  Tiempo_Anterior_PID=HAL_GetTick();
+		  }
+
+	  }
+	  HAL_GPIO_TogglePin(LED_D_GPIO_Port, LED_D_Pin);
 
 
 
@@ -204,6 +244,7 @@ HAL_Delay(200);*/
 
     /* USER CODE BEGIN 3 */
   }
+
   /* USER CODE END 3 */
 }
 
@@ -256,6 +297,7 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void Inicializar_Sistema()
 {
+	 HAL_GPIO_WritePin(LED_Alarma_GPIO_Port, LED_Alarma_Pin, 1);
 	  MPU6500_Status=MPU6500_Init(&MPU6500_Datos,10,DPS250,G2);
 	  if (MPU6500_Status==MPU6500_fail) {
 	  	for (;;) {
@@ -272,15 +314,44 @@ void Inicializar_Sistema()
 	  __HAL_TIM_SET_COUNTER(&htim3,0);
 
 	Inicializar_Brushless();
-	for (int var = 1000; var < 1400; var+=20) {
+	/*for (int var = 1000; var < 1400; var+=20) {
 		PWM_Brushless(var);
 		HAL_Delay(300);
-	}
-	for (int var = 0; var < 16; ++var) {
-		RegletaMax[var]=0;
-		RegletaMin[var]=4095;
-	}
+	}*/
+	  for (int var = 0; var < 16; ++var) {
+		  RegletaMax[var]=0;
+		  RegletaMin[var]=4095;
+	  }
+	  HAL_GPIO_WritePin(LED_A_GPIO_Port, LED_A_Pin, 0);
+	  HAL_GPIO_WritePin(LED_B_GPIO_Port, LED_B_Pin, 0);
+	  HAL_GPIO_WritePin(LED_C_GPIO_Port, LED_C_Pin, 0);
+	  HAL_GPIO_WritePin(LED_D_GPIO_Port, LED_D_Pin, 0);
 
+	  HAL_GPIO_WritePin(LED_Alarma_GPIO_Port, LED_Alarma_Pin, 0);
+}
+uint32_t ADC_leer_Canal(uint32_t canal) {
+    ADC_ChannelConfTypeDef sConfig = {0};
+
+    // 1. Configurar el canal que queremos leer
+    sConfig.Channel = canal;
+    sConfig.Rank = ADC_REGULAR_RANK_1;
+    sConfig.SamplingTime = ADC_SAMPLETIME_13CYCLES_5; // Tiempo suficiente para el Mux
+    if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+        Error_Handler();
+    }
+
+    // 2. Iniciar la conversión
+    HAL_ADC_Start(&hadc1);
+
+    // 3. Esperar a que termine (timeout de 10ms)
+    if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK) {
+        uint32_t valor = HAL_ADC_GetValue(&hadc1);
+        HAL_ADC_Stop(&hadc1);
+        return valor;
+    }
+
+    HAL_ADC_Stop(&hadc1);
+    return 0;
 }
 
 void Leer_sensores(bool enSensores)
@@ -288,17 +359,17 @@ void Leer_sensores(bool enSensores)
 	HAL_GPIO_WritePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin, enSensores);
 	if(MuxSel<16)
 	{
-		HAL_ADC_Start(&hadc1);
-		if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
+		HAL_ADC_Start(&hadc2);
+		if (HAL_ADC_PollForConversion(&hadc2, 10) == HAL_OK)
 		{
-			// 3. Obtener el valor (0 a 4095 para 12 bits)
-			RegletaSensores[MuxSel] =(uint16_t) HAL_ADC_GetValue(&hadc1); // Lee el resultado
-			if(RegletaSensores[MuxSel]>RegletaMax[MuxSel]){RegletaMax[MuxSel]=RegletaSensores[MuxSel];}
+			RegletaSensores[MuxSel] =(uint16_t) HAL_ADC_GetValue(&hadc2); // Lee el resultado
 
-			if(RegletaSensores[MuxSel]<RegletaMin[MuxSel]){RegletaMin[MuxSel]=RegletaSensores[MuxSel];}
+			//solo si se utilizara por el momento no
+			//if(RegletaSensores[MuxSel]>RegletaMax[MuxSel]){RegletaMax[MuxSel]=RegletaSensores[MuxSel];}
+			//if(RegletaSensores[MuxSel]<RegletaMin[MuxSel]){RegletaMin[MuxSel]=RegletaSensores[MuxSel];}
 
 		}
-		HAL_ADC_Stop(&hadc1);
+		HAL_ADC_Stop(&hadc2);
 		valor = RegletaSensores[MuxSel];
 		// Se realizara una media ponderada normalizada entre 0-1000 donde 0 es iquierda y 1000 derecha
 		// Umbral de ruido: 10% del valor máximo (4095 * 0.1 = 409)
@@ -312,23 +383,42 @@ void Leer_sensores(bool enSensores)
 		MuxSel++;
 	}
 	else{
-							if(sumaLecturas>0)
-							{
-							UltimaPosicion = (int)(sumaPonderada / sumaLecturas);
-							}
-							MuxSel=0;
-							sumaLecturas=0;
-							sumaPonderada=0;
-							peso=0;
-							valor=0;
-							flagRegleta=true;
-				}
+		if(sumaLecturas>0)
+		{
+			UltimaPosicion = (int)(sumaPonderada / sumaLecturas);
+		}
+		MuxSel=0;
+		sumaLecturas=0;
+		sumaPonderada=0;
+		peso=0;
+		valor=0;
+		flagRegleta=true;
+	}
 
-			HAL_GPIO_WritePin(S0_MUX_GPIO_Port, S0_MUX_Pin, (PosicionesSensores[MuxSel]&1));
-			HAL_GPIO_WritePin(S1_MUX_GPIO_Port, S1_MUX_Pin, (PosicionesSensores[MuxSel]&2)>>1);
-			HAL_GPIO_WritePin(S2_MUX_GPIO_Port, S2_MUX_Pin, (PosicionesSensores[MuxSel]&4)>>2);
-			HAL_GPIO_WritePin(S3_MUX_GPIO_Port, S3_MUX_Pin, (PosicionesSensores[MuxSel]&8)>>3);
+	HAL_GPIO_WritePin(S0_MUX_GPIO_Port, S0_MUX_Pin, (PosicionesSensores[MuxSel]&1));
+	HAL_GPIO_WritePin(S1_MUX_GPIO_Port, S1_MUX_Pin, (PosicionesSensores[MuxSel]&2)>>1);
+	HAL_GPIO_WritePin(S2_MUX_GPIO_Port, S2_MUX_Pin, (PosicionesSensores[MuxSel]&4)>>2);
+	HAL_GPIO_WritePin(S3_MUX_GPIO_Port, S3_MUX_Pin, (PosicionesSensores[MuxSel]&8)>>3);
 
+}
+float funcion_calcularPID(PID* pid,int16_t setpoint,int16_t actual,float dt)
+{
+	float error=(float)(setpoint-actual);
+	float P=error*pid->kp;
+
+	pid->integral=pid->integral+error;
+	if(pid->integral>(pid->winup))pid->integral=(pid->winup);
+	if(pid->integral<-(pid->winup))pid->integral=-(pid->winup);
+
+	float I=pid->ki*pid->integral;
+
+	float D=pid->kd*(error-pid->ultimoError);
+	pid->ultimoError=error;
+
+	float PIDout=P+I+D;
+	if(PIDout>(pid->PWM_Maximo))PIDout=(pid->PWM_Maximo);
+	if(PIDout<-(pid->PWM_Maximo))PIDout=-(pid->PWM_Maximo);
+	return PIDout;
 }
 /* USER CODE END 4 */
 

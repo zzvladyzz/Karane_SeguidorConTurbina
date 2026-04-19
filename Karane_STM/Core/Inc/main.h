@@ -63,14 +63,6 @@ void Error_Handler(void);
 #define PULSADOR_GPIO_Port GPIOC
 #define ENCC_MR_Pin GPIO_PIN_15
 #define ENCC_MR_GPIO_Port GPIOC
-#define AMP_ML_Pin GPIO_PIN_2
-#define AMP_ML_GPIO_Port GPIOA
-#define AMP_MR_Pin GPIO_PIN_3
-#define AMP_MR_GPIO_Port GPIOA
-#define VOLT_Pin GPIO_PIN_4
-#define VOLT_GPIO_Port GPIOA
-#define IN_MUX_Pin GPIO_PIN_5
-#define IN_MUX_GPIO_Port GPIOA
 #define ENCC_ML_Pin GPIO_PIN_0
 #define ENCC_ML_GPIO_Port GPIOB
 #define S0_MUX_Pin GPIO_PIN_1
@@ -87,14 +79,14 @@ void Error_Handler(void);
 #define PWM_FAN_GPIO_Port GPIOA
 #define EN_SENSORES_Pin GPIO_PIN_11
 #define EN_SENSORES_GPIO_Port GPIOA
-#define LED_RR_Pin GPIO_PIN_12
-#define LED_RR_GPIO_Port GPIOA
-#define LED_RL_Pin GPIO_PIN_15
-#define LED_RL_GPIO_Port GPIOA
-#define LED_LR_Pin GPIO_PIN_3
-#define LED_LR_GPIO_Port GPIOB
-#define LED_LL_Pin GPIO_PIN_4
-#define LED_LL_GPIO_Port GPIOB
+#define LED_D_Pin GPIO_PIN_12
+#define LED_D_GPIO_Port GPIOA
+#define LED_C_Pin GPIO_PIN_15
+#define LED_C_GPIO_Port GPIOA
+#define LED_B_Pin GPIO_PIN_3
+#define LED_B_GPIO_Port GPIOB
+#define LED_A_Pin GPIO_PIN_4
+#define LED_A_GPIO_Port GPIOB
 #define MOTOR_EN_Pin GPIO_PIN_5
 #define MOTOR_EN_GPIO_Port GPIOB
 

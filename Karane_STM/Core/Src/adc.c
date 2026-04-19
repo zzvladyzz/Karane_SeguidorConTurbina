@@ -57,9 +57,9 @@ void MX_ADC1_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_5;
+  sConfig.Channel = ADC_CHANNEL_2;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_41CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_13CYCLES_5;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -99,9 +99,9 @@ void MX_ADC2_Init(void)
 
   /** Configure Regular Channel
   */
-  sConfig.Channel = ADC_CHANNEL_2;
+  sConfig.Channel = ADC_CHANNEL_5;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_13CYCLES_5;
   if (HAL_ADC_ConfigChannel(&hadc2, &sConfig) != HAL_OK)
   {
     Error_Handler();
@@ -126,11 +126,11 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC1 GPIO Configuration
-    PA5     ------> ADC1_IN5
+    PA2     ------> ADC1_IN2
     */
-    GPIO_InitStruct.Pin = IN_MUX_Pin;
+    GPIO_InitStruct.Pin = GPIO_PIN_2;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-    HAL_GPIO_Init(IN_MUX_GPIO_Port, &GPIO_InitStruct);
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USER CODE BEGIN ADC1_MspInit 1 */
 
@@ -146,11 +146,9 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
 
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC2 GPIO Configuration
-    PA2     ------> ADC2_IN2
-    PA3     ------> ADC2_IN3
-    PA4     ------> ADC2_IN4
+    PA5     ------> ADC2_IN5
     */
-    GPIO_InitStruct.Pin = AMP_ML_Pin|AMP_MR_Pin|VOLT_Pin;
+    GPIO_InitStruct.Pin = GPIO_PIN_5;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
@@ -172,9 +170,9 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     __HAL_RCC_ADC1_CLK_DISABLE();
 
     /**ADC1 GPIO Configuration
-    PA5     ------> ADC1_IN5
+    PA2     ------> ADC1_IN2
     */
-    HAL_GPIO_DeInit(IN_MUX_GPIO_Port, IN_MUX_Pin);
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_2);
 
   /* USER CODE BEGIN ADC1_MspDeInit 1 */
 
@@ -189,11 +187,9 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     __HAL_RCC_ADC2_CLK_DISABLE();
 
     /**ADC2 GPIO Configuration
-    PA2     ------> ADC2_IN2
-    PA3     ------> ADC2_IN3
-    PA4     ------> ADC2_IN4
+    PA5     ------> ADC2_IN5
     */
-    HAL_GPIO_DeInit(GPIOA, AMP_ML_Pin|AMP_MR_Pin|VOLT_Pin);
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_5);
 
   /* USER CODE BEGIN ADC2_MspDeInit 1 */
 
