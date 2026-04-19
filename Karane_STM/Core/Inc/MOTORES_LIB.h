@@ -19,6 +19,9 @@ typedef struct{
 }Motores_Init;
 
 void Inicializar_Motores(Motores_Init * Mot);
+void Inicializar_Brushless();
 void PWM_Motores(Motores_Init * Mot);
+void PWM_Brushless(uint16_t pwm);
+
 
 #endif /* INC_MOTORES_LIB_H_ */

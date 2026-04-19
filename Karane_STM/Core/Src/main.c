@@ -57,21 +57,25 @@ Motores_Init Motor;
 /* USER CODE BEGIN PV */
 char bufferTxt[30];
 static uint8_t PosicionesSensores[16]={15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
-volatile uint8_t 	MuxSel=0;
-volatile uint16_t 	RegletaSensores[16]={0};
-volatile int UltimaPosicion	=500;				// var donde se almacenara la posicion en la linea
-volatile unsigned long sumaPonderada = 0;
-volatile unsigned long sumaLecturas = 0;
-volatile long valor=0;
-volatile unsigned long peso=0;
+uint8_t 	MuxSel=0;
+int16_t 	RegletaSensores[16]={0};
+int16_t	RegletaMax[16];
+int16_t	RegletaMin[16];
 
+int16_t UltimaPosicion	=500;				// var donde se almacenara la posicion en la linea
+unsigned long sumaPonderada = 0;
+unsigned long sumaLecturas = 0;
+long valor=0;
+unsigned long peso=0;
+bool	flagRegleta=false;
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-void Leer_sensores();
+void Leer_sensores(bool enSensores);
+void Inicializar_Sistema();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -117,22 +121,9 @@ int main(void)
   MX_ADC2_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  MPU6500_Status=MPU6500_Init(&MPU6500_Datos,10,DPS250,G2);
-  if (MPU6500_Status==MPU6500_fail) {
-  	for (;;) {
-  		 sprintf(bufferTxt,"Fallo al iniciar MPU\r\n");
-  				  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-  				HAL_Delay(500);
-  		}
- }
-  Inicializar_Motores(&Motor);
 
-  HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
-  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
-HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,1000);
-  HAL_Delay(3000);
-
+  Inicializar_Sistema();
+bool trash_estado=true;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -141,17 +132,39 @@ __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,1000);
   {
 	  if(HAL_GPIO_ReadPin(PULSADOR_GPIO_Port, PULSADOR_Pin)==1)
 	  {
+		  trash_estado=false;
+		  /*
 		  Motor.ENABLE=true;
 		    Motor.PWM_ML=150;
-		    Motor.PWM_MR=-150;
+		    Motor.PWM_MR=150;
 
 		    PWM_Motores(&Motor);
 		    HAL_Delay(2000);
 		    Motor.ENABLE=false;
 		    		    PWM_Motores(&Motor);
+		    		  	int32_t encoder_valueA = __HAL_TIM_GET_COUNTER(&htim2);
+		    		  	int32_t encoder_valueB = __HAL_TIM_GET_COUNTER(&htim3);
+		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueA);
+		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueB);
+		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+		    		  	sprintf(bufferTxt,"\r\n ");
+		    		  		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+		    		  		  __HAL_TIM_SET_COUNTER(&htim2,0);
+		    		  		  __HAL_TIM_SET_COUNTER(&htim3,0);
 
+*/
 	  }
-	  /*
+	  int32_t encoder_valueA = __HAL_TIM_GET_COUNTER(&htim2);
+	  		    		  	int32_t encoder_valueB = __HAL_TIM_GET_COUNTER(&htim3);
+	  		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueA);
+	  		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+	  		    		  	sprintf(bufferTxt," ENC= %ld ",encoder_valueB);
+	  		    		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+	  		    		  	sprintf(bufferTxt,"\r\n ");
+	  		    		  		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+HAL_Delay(500);
+/*
 	  MPU6500_Read(&MPU6500_Datos);
 	  	  MPU6500_Conv=MPU6500_Converter(&MPU6500_Datos, DPS250_CONV, G2_CONV);
 
@@ -172,56 +185,21 @@ __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,1000);
 
 	  	sprintf(bufferTxt," Az= %.2f \r\n",MPU6500_Conv.MPU6500_floatAZ);
 	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-	  	HAL_Delay(500);
-	  	HAL_GPIO_TogglePin(LED_LL_GPIO_Port, LED_LL_Pin);
-	  	HAL_GPIO_TogglePin(LED_LR_GPIO_Port, LED_LR_Pin);
-	  	HAL_GPIO_TogglePin(LED_RL_GPIO_Port, LED_RL_Pin);
-	  	HAL_GPIO_TogglePin(LED_RR_GPIO_Port, LED_RR_Pin);
-	  	HAL_GPIO_TogglePin(LED_Alarma_GPIO_Port, LED_Alarma_Pin);
-
-	  	int16_t encoder_valueA = __HAL_TIM_GET_COUNTER(&htim2);
-	  	int16_t encoder_valueB = __HAL_TIM_GET_COUNTER(&htim3);
-	  	sprintf(bufferTxt," ENC= %d ",encoder_valueA);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-	  	sprintf(bufferTxt," ENC= %d ",encoder_valueB);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-
-	  	HAL_GPIO_WritePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin, GPIO_PIN_SET);
-	  	HAL_Delay(20);
-	  	for(int x=0;x<16;x++)
-	  	{
-	  	Leer_sensores();
-	  	}
-	  	sprintf(bufferTxt," posicion %d ",UltimaPosicion);
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-	  	HAL_GPIO_WritePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin, GPIO_PIN_RESET);
- HAL_Delay(300);*/
+		sprintf(bufferTxt,"\r\n ");
+			    		  		  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+HAL_Delay(200);*/
 
 
-	  HAL_GPIO_WritePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin, 0);
-	  //HAL_GPIO_TogglePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin);
-	  HAL_GPIO_TogglePin(LED_Alarma_GPIO_Port, LED_Alarma_Pin);
-
-	 /* for (uint8_t var = 0; var < 16; ++var) {
-
-
-		  HAL_GPIO_WritePin(S0_MUX_GPIO_Port, S0_MUX_Pin, var&1);
-		  HAL_GPIO_WritePin(S1_MUX_GPIO_Port, S1_MUX_Pin, (var&2)>>1);
-		  HAL_GPIO_WritePin(S2_MUX_GPIO_Port, S2_MUX_Pin, (var&4)>>2);
-		  HAL_GPIO_WritePin(S3_MUX_GPIO_Port, S3_MUX_Pin, (var&8)>>3);
-		  HAL_Delay(5);
-		  Leer_sensores();
-
+	  Leer_sensores(trash_estado);
+	  if(flagRegleta==true)
+	  {
+		  flagRegleta=false;
 	  }
+	  HAL_Delay(5);
 
 
-sprintf(bufferTxt,"\r\n ");
-	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
 
-	  	    // 4. Detener el ADC
-	  	    HAL_ADC_Stop(&hadc1);
-HAL_Delay(500);
-*/
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -276,61 +254,81 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void Leer_sensores()
-{	  HAL_ADC_Start(&hadc1);
+void Inicializar_Sistema()
+{
+	  MPU6500_Status=MPU6500_Init(&MPU6500_Datos,10,DPS250,G2);
+	  if (MPU6500_Status==MPU6500_fail) {
+	  	for (;;) {
+	  		 sprintf(bufferTxt,"Fallo al iniciar MPU\r\n");
+	  				  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+	  				HAL_Delay(500);
+	  		}
+	 }
+	  Inicializar_Motores(&Motor);
 
-  // 2. Esperar a que la conversión termine (Timeout de 10ms)
-  if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
-  {
-      // 3. Obtener el valor (0 a 4095 para 12 bits)
-  	uint16_t valor =(uint16_t) HAL_ADC_GetValue(&hadc1); // Lee el resultado
+	  HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
+	  HAL_TIM_Encoder_Start(&htim3, TIM_CHANNEL_ALL);
+	  __HAL_TIM_SET_COUNTER(&htim2,0);
+	  __HAL_TIM_SET_COUNTER(&htim3,0);
 
-	  sprintf(bufferTxt," A = %d ",valor);
-	  	  	HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+	Inicializar_Brushless();
+	for (int var = 1000; var < 1400; var+=20) {
+		PWM_Brushless(var);
+		HAL_Delay(300);
+	}
+	for (int var = 0; var < 16; ++var) {
+		RegletaMax[var]=0;
+		RegletaMin[var]=4095;
+	}
 
-  }
-	/*
-	HAL_ADC_Start(&hadc1);
+}
 
-	    // 2. Esperar a que la conversión termine (Timeout de 10ms)
-	    if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
-	    {
-	        // 3. Obtener el valor (0 a 4095 para 12 bits)
-	    	RegletaSensores[MuxSel] =(uint16_t) HAL_ADC_GetValue(&hadc1); // Lee el resultado
+void Leer_sensores(bool enSensores)
+{
+	HAL_GPIO_WritePin(EN_SENSORES_GPIO_Port, EN_SENSORES_Pin, enSensores);
+	if(MuxSel<16)
+	{
+		HAL_ADC_Start(&hadc1);
+		if (HAL_ADC_PollForConversion(&hadc1, 10) == HAL_OK)
+		{
+			// 3. Obtener el valor (0 a 4095 para 12 bits)
+			RegletaSensores[MuxSel] =(uint16_t) HAL_ADC_GetValue(&hadc1); // Lee el resultado
+			if(RegletaSensores[MuxSel]>RegletaMax[MuxSel]){RegletaMax[MuxSel]=RegletaSensores[MuxSel];}
 
-	    }
+			if(RegletaSensores[MuxSel]<RegletaMin[MuxSel]){RegletaMin[MuxSel]=RegletaSensores[MuxSel];}
 
-	    // 4. Detener el ADC
-	    HAL_ADC_Stop(&hadc1);
+		}
+		HAL_ADC_Stop(&hadc1);
+		valor = RegletaSensores[MuxSel];
+		// Se realizara una media ponderada normalizada entre 0-1000 donde 0 es iquierda y 1000 derecha
+		// Umbral de ruido: 10% del valor máximo (4095 * 0.1 = 409)
+		if (valor > 409) {
+			// Peso del sensor (de 0 a 1000)
+			peso = (MuxSel * 1000L) / (NumSensores - 1);
+			sumaPonderada += peso * valor;
+			sumaLecturas += valor;
+		}
 
-
-			if(MuxSel<16)
-				{
-				valor = RegletaSensores[MuxSel];
-				// Se realizara una media ponderada normalizada entre 0-1000 donde 0 es iquierda y 1000 derecha
-				// Umbral de ruido: 10% del valor máximo (4095 * 0.1 = 409)
-				if (valor > 409) {
-					// Peso del sensor (de 0 a 1000)
-					peso = (MuxSel * 1000L) / (NumSensores - 1);
-					sumaPonderada += peso * valor;
-					sumaLecturas += valor;
-					}
-				MuxSel++;
-				}
-			else{
-
+		MuxSel++;
+	}
+	else{
+							if(sumaLecturas>0)
+							{
 							UltimaPosicion = (int)(sumaPonderada / sumaLecturas);
+							}
 							MuxSel=0;
 							sumaLecturas=0;
 							sumaPonderada=0;
 							peso=0;
 							valor=0;
+							flagRegleta=true;
 				}
+
 			HAL_GPIO_WritePin(S0_MUX_GPIO_Port, S0_MUX_Pin, (PosicionesSensores[MuxSel]&1));
 			HAL_GPIO_WritePin(S1_MUX_GPIO_Port, S1_MUX_Pin, (PosicionesSensores[MuxSel]&2)>>1);
 			HAL_GPIO_WritePin(S2_MUX_GPIO_Port, S2_MUX_Pin, (PosicionesSensores[MuxSel]&4)>>2);
 			HAL_GPIO_WritePin(S3_MUX_GPIO_Port, S3_MUX_Pin, (PosicionesSensores[MuxSel]&8)>>3);
-			HAL_Delay(20);*/
+
 }
 /* USER CODE END 4 */
 
