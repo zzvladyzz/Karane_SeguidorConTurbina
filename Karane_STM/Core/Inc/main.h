@@ -63,6 +63,8 @@ void Error_Handler(void);
 #define PULSADOR_GPIO_Port GPIOC
 #define ENCC_MR_Pin GPIO_PIN_15
 #define ENCC_MR_GPIO_Port GPIOC
+#define MR_Pin GPIO_PIN_2
+#define MR_GPIO_Port GPIOA
 #define ENCC_ML_Pin GPIO_PIN_0
 #define ENCC_ML_GPIO_Port GPIOB
 #define S0_MUX_Pin GPIO_PIN_1

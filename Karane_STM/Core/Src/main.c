@@ -159,12 +159,12 @@ int main(void)
 		  //IniciarPID=true;
 
 		  HAL_GPIO_WritePin(LED_A_GPIO_Port, LED_A_Pin, 1);
-		  HAL_Delay(1000);
+		/*  HAL_Delay(1000);
 		  for (int var = 1000; var < 1400; var+=20) {
 		  		PWM_Brushless(var);
 		  		HAL_Delay(300);
-		  	}
-		  for (int var = 80; var < 84; var+=2) {
+		  	}*/
+		  for (int var = 0; var < 900; var+=5) {
 
 			  Motor.ENABLE=true;
 
@@ -174,23 +174,25 @@ int main(void)
 			  float voltajeADC = (valoresADC[2] * 3.5f) / 4095.0f;
 
 			  float voltaje = voltajeADC*3.1526;
-
-			  int16_t	pwmm=(int16_t)925/voltaje;//950 por 0.90v *1000 arr para pwm necesario hacerlo para cada uno
+/* valores iniciales
+			  int16_t	ML=(int16_t)574/voltaje;//950 por 0.150v *1000 arr para pwm necesario hacerlo para cada uno
+			  MR=(int16_t)654/voltaje;*/
 			  // ML 1000 y MR 900a 950
-			  Motor.PWM_ML=pwmm;
-			  Motor.PWM_MR=pwmm;
+			  Motor.PWM_ML=var;
+
+			  Motor.PWM_MR=var;
 
 				  PWM_Motores(&Motor);
 		  sprintf(bufferTxt," Adc= %ld ",valoresADC[2]);
 		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
 		  sprintf(bufferTxt," volt= %0.4f ",voltaje);
 		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-		  sprintf(bufferTxt," volt= %d ",pwmm);
+		  sprintf(bufferTxt," volt= %d ",var);
 		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
 
 		  sprintf(bufferTxt,"\r\n ");
 		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
-		  HAL_Delay(500);
+		  HAL_Delay(50);
 		  }
 		  HAL_GPIO_WritePin(LED_A_GPIO_Port, LED_A_Pin, 0);
 		  Motor.PWM_ML=0;
