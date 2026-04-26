@@ -10,14 +10,14 @@ Karane_STM/*.map
 *.su
 *.elf
 
-IndaV2_STM/Debug/
-IndaV2_STM/Release/
-IndaV2_STM/.settings/
-IndaV2_STM/*.launch
-IndaV2_STM/*.o
-IndaV2_STM/*.elf
-IndaV2_STM/*.bin
-IndaV2_STM/*.map
+KaraneV2_STM/Debug/
+KaraneV2_STM/Release/
+KaraneV2_STM/.settings/
+KaraneV2_STM/*.launch
+KaraneV2_STM/*.o
+KaraneV2_STM/*.elf
+KaraneV2_STM/*.bin
+KaraneV2_STM/*.map
 
 
 Karane_Kicad/*.bak
