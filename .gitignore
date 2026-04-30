@@ -6,18 +6,6 @@ Karane_STM/*.o
 Karane_STM/*.elf
 Karane_STM/*.bin
 Karane_STM/*.map
-*.o
-*.su
-*.elf
-
-KaraneV2_STM/Debug/
-KaraneV2_STM/Release/
-KaraneV2_STM/.settings/
-KaraneV2_STM/*.launch
-KaraneV2_STM/*.o
-KaraneV2_STM/*.elf
-KaraneV2_STM/*.bin
-KaraneV2_STM/*.map
 
 
 Karane_Kicad/*.bak
@@ -30,6 +18,32 @@ Karane_Kicad/*.kicad_prl
 Karane_Kicad/*.kicad_pcb-bin
 Karane_Kicad/Karane_Kicad-backups/
 Karane_Kicad/.history/
+
+
+*.o
+*.su
+*.elf
+
+Inda_STM/Debug/
+Inda_STM/Release/
+Inda_STM/.settings/
+Inda_STM/*.launch
+Inda_STM/*.o
+Inda_STM/*.elf
+Inda_STM/*.bin
+Inda_STM/*.map
+
+
+Inda_Kicad/*.bak
+Inda_Kicad/*.kicad_pcb-bak
+Inda_Kicad/*.sch-bak
+Inda_Kicad/*-save.kicad_pcb
+Inda_Kicad/_autosave-*
+Inda_Kicad/fp-info-cache
+Inda_Kicad/*.kicad_prl
+Inda_Kicad/*.kicad_pcb-bin
+Inda_Kicad/Inda_Kicad-backups/
+Inda_Kicad.history/
 
 
 .DS_Store
