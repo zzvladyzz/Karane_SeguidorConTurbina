@@ -6186,16 +6186,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 110.49) (xy 351.79 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21cc9666-8ad2-451a-8d75-2f91dde0ae05")
-	)
-	(wire
-		(pts
 			(xy 66.04 88.9) (xy 78.74 88.9)
 		)
 		(stroke
@@ -8566,16 +8556,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 113.03) (xy 334.01 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e75ed263-14a8-42e9-bb68-228d078894dc")
-	)
-	(wire
-		(pts
 			(xy 35.56 36.83) (xy 39.37 36.83)
 		)
 		(stroke
@@ -9754,16 +9734,6 @@
 		)
 		(uuid "ef714a27-fccf-4b0d-a5f5-9064ac8b8a7d")
 	)
-	(label "PWM_MOTO_BRUSSHLES"
-		(at 351.79 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f1e64121-8d08-4f07-98cd-a2ca27cf3036")
-	)
 	(label "ENCB_MR"
 		(at 276.86 176.53 0)
 		(effects
@@ -9883,7 +9853,7 @@
 			(uuid "58ac0b27-4cbc-43a3-8de3-577866d64627")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR048")
 					(unit 1)
@@ -9964,7 +9934,7 @@
 			(uuid "1cf1a5d8-4a4f-4dff-9c56-1aca6ef41186")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C3")
 					(unit 1)
@@ -10046,7 +10016,7 @@
 			(uuid "a27ed051-3b58-4efd-b991-ac448693e688")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C16")
 					(unit 1)
@@ -10159,7 +10129,7 @@
 			(uuid "fc002e20-4296-4b18-a8dc-add440fcd519")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "J2")
 					(unit 1)
@@ -10201,7 +10171,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 137.922 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -10241,7 +10211,7 @@
 			(uuid "65467b18-8369-42b8-9acc-0e37c8157c31")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R14")
 					(unit 1)
@@ -10319,7 +10289,7 @@
 			(uuid "b5116ab2-e3c5-434f-b6e3-c0ea07af872e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR01")
 					(unit 1)
@@ -10410,7 +10380,7 @@
 			(uuid "88fde287-e951-445f-a032-936ed536c908")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "J4")
 					(unit 1)
@@ -10488,7 +10458,7 @@
 			(uuid "de4595d6-636b-47a4-80f5-0f2479958edb")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR018")
 					(unit 1)
@@ -10754,7 +10724,7 @@
 			(uuid "b0563ed3-3c26-4884-9948-737568dfbdfd")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "U2")
 					(unit 1)
@@ -10833,7 +10803,7 @@
 			(uuid "65c8d0bd-8ee6-46bd-96df-97e01dab681f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR021")
 					(unit 1)
@@ -10942,7 +10912,7 @@
 			(uuid "82068f6f-e5ac-4f70-a6ea-4f6d2a0a5623")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "Y1")
 					(unit 1)
@@ -11021,7 +10991,7 @@
 			(uuid "5ecbc374-e041-4b57-a0cd-aaa7590371e7")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR045")
 					(unit 1)
@@ -11099,7 +11069,7 @@
 			(uuid "ce1fe2a2-4f32-4a63-92a4-868f7b43a9db")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR044")
 					(unit 1)
@@ -11141,7 +11111,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 21.082 255.27 90)
 			(hide yes)
 			(show_name no)
@@ -11181,88 +11151,9 @@
 			(uuid "4031ab21-b752-4262-a9fb-e3382263f03a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 334.01 113.03 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b0bc791-21a5-4b0b-ae6b-41d1edbc78af")
-		(property "Reference" "#PWR052"
-			(at 340.36 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 337.82 113.0299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 334.01 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 334.01 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 334.01 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "03ac6639-61e5-44dc-9e80-0a0006fea38c")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
-					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -11338,7 +11229,7 @@
 			(uuid "6d45df0c-21de-4b64-8c81-b20cf26bcf77")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR012")
 					(unit 1)
@@ -11416,7 +11307,7 @@
 			(uuid "62e026f4-1958-4d08-a51e-8483e7e6a993")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR06")
 					(unit 1)
@@ -11493,7 +11384,7 @@
 			(uuid "acf0bd7e-0293-4806-8978-d02e4aa3f53b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H1")
 					(unit 1)
@@ -11575,7 +11466,7 @@
 			(uuid "5a1f6dc5-625d-4747-87ff-d8736faebf8b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C11")
 					(unit 1)
@@ -11654,7 +11545,7 @@
 			(uuid "67cab6b1-1ec7-4df9-96af-498a1f434925")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR010")
 					(unit 1)
@@ -11747,7 +11638,7 @@
 			(uuid "ff532518-fc0f-4ba4-8b26-5f26b89b9a2c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D3")
 					(unit 1)
@@ -11824,7 +11715,7 @@
 			(uuid "89630b49-2b11-4b85-ad13-11ba4e6e5ebe")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H3")
 					(unit 1)
@@ -11866,7 +11757,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 129.032 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -11906,7 +11797,7 @@
 			(uuid "0f529e5a-30f6-4837-97dd-c783500596d6")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R13")
 					(unit 1)
@@ -11945,7 +11836,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 101.092 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -11985,7 +11876,7 @@
 			(uuid "c9a3b1ee-2c5b-41c4-96c3-9f7550999862")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R10")
 					(unit 1)
@@ -12027,7 +11918,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 137.922 247.65 90)
 			(hide yes)
 			(show_name no)
@@ -12067,7 +11958,7 @@
 			(uuid "215f076f-fbf6-4752-8bf3-91b6d0bd1b4f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R15")
 					(unit 1)
@@ -12109,7 +12000,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 33.782 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -12149,7 +12040,7 @@
 			(uuid "e120a11e-dd1b-49ae-aef5-7316e621035f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R2")
 					(unit 1)
@@ -12189,7 +12080,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 36.83 156.718 90)
 			(hide yes)
 			(show_name no)
@@ -12229,7 +12120,7 @@
 			(uuid "dffb559a-ede2-4d82-a420-34a28addfbd6")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R4")
 					(unit 1)
@@ -12308,7 +12199,7 @@
 			(uuid "7907a541-1453-4261-9116-5d8b473841d7")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#FLG01")
 					(unit 1)
@@ -12350,7 +12241,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 35.052 96.52 90)
 			(hide yes)
 			(show_name no)
@@ -12390,7 +12281,7 @@
 			(uuid "6403ab25-3652-42ec-8622-3b457d122a10")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R3")
 					(unit 1)
@@ -12432,7 +12323,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 146.812 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -12472,7 +12363,7 @@
 			(uuid "9145c0cd-c9d9-455c-af09-a0d14f59bd1e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R17")
 					(unit 1)
@@ -12551,7 +12442,7 @@
 			(uuid "90dba17a-5c3e-46a0-8f72-c76f36e385be")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR042")
 					(unit 1)
@@ -12593,7 +12484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 156.972 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -12633,7 +12524,7 @@
 			(uuid "dae50952-a46c-4d6f-bb9f-594a5eccc0ef")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R18")
 					(unit 1)
@@ -12715,7 +12606,7 @@
 			(uuid "5e85cdc5-33c6-4351-901e-81fef60b48f0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "SW4")
 					(unit 1)
@@ -12794,7 +12685,7 @@
 			(uuid "de89d4a9-6bd4-4818-9169-e48ea024c63d")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR085")
 					(unit 1)
@@ -12872,7 +12763,7 @@
 			(uuid "0737f42a-6a53-456a-9f1f-d71df8a8e8bd")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR087")
 					(unit 1)
@@ -12951,7 +12842,7 @@
 			(uuid "98e57d08-7875-4cea-8614-4cf8f8f09a12")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR04")
 					(unit 1)
@@ -13030,7 +12921,7 @@
 			(uuid "8a8df61e-d54a-4ff4-8f81-fe5163b1e368")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#FLG02")
 					(unit 1)
@@ -13108,7 +12999,7 @@
 			(uuid "d542377c-50b4-48a2-aed5-be3df3f83932")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR011")
 					(unit 1)
@@ -13190,7 +13081,7 @@
 			(uuid "e1d6b90a-2455-460f-a87e-51063f90b5c2")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C14")
 					(unit 1)
@@ -13267,7 +13158,7 @@
 			(uuid "1d71af36-ed05-4443-b102-0c2b091e2133")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H6")
 					(unit 1)
@@ -13355,7 +13246,7 @@
 			(uuid "4a7563e2-1dc6-4a8a-afa2-6e72815b0ea1")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "Q2")
 					(unit 1)
@@ -13433,7 +13324,7 @@
 			(uuid "0bb2efba-df37-40dd-9a13-2da49090925f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR015")
 					(unit 1)
@@ -13511,7 +13402,7 @@
 			(uuid "a8046b5e-34a2-4648-b423-15c40787dca7")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR088")
 					(unit 1)
@@ -13589,7 +13480,7 @@
 			(uuid "182ceec5-9520-4ca7-bd91-3cf214a2d692")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR099")
 					(unit 1)
@@ -13668,7 +13559,7 @@
 			(uuid "b01331e5-c90d-41ae-b41b-bf82a956c584")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR097")
 					(unit 1)
@@ -13746,7 +13637,7 @@
 			(uuid "4666368d-fdad-4108-be49-afe10f30033f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR016")
 					(unit 1)
@@ -13828,7 +13719,7 @@
 			(uuid "b5412ec5-fec3-4762-98b2-692d37c13d68")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D8")
 					(unit 1)
@@ -13906,7 +13797,7 @@
 			(uuid "f61fefe7-1df1-4a92-b096-967f546e8cd9")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR039")
 					(unit 1)
@@ -13983,7 +13874,7 @@
 			(uuid "62bb0fd2-2260-4ce6-912c-573de4718fe3")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR033")
 					(unit 1)
@@ -14060,7 +13951,7 @@
 			(uuid "d516ee8a-25b1-4b9b-994f-0c03f7c75355")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR030")
 					(unit 1)
@@ -14142,7 +14033,7 @@
 			(uuid "5a8f4208-9c91-4844-b13d-e71bdc159b68")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C17")
 					(unit 1)
@@ -14223,7 +14114,7 @@
 			(uuid "cb5e74c5-b5f0-4339-991e-b55a6c795c34")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C7")
 					(unit 1)
@@ -14301,7 +14192,7 @@
 			(uuid "7e62e260-c4cd-4e8c-8cb0-d6c3ea0a8cc5")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR041")
 					(unit 1)
@@ -14382,7 +14273,7 @@
 			(uuid "321512c8-2130-44b3-8f6e-1879c9b249d6")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C10")
 					(unit 1)
@@ -14467,7 +14358,7 @@
 			(uuid "f0507d3d-f9c4-4c91-b6af-96b476919689")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "U1")
 					(unit 1)
@@ -14546,7 +14437,7 @@
 			(uuid "8df3ce1c-21be-40b8-99dc-ea94601acdb0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR05")
 					(unit 1)
@@ -14623,7 +14514,7 @@
 			(uuid "e33b4bf9-15d5-4a8c-bfb5-e81922efcd19")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR029")
 					(unit 1)
@@ -14716,7 +14607,7 @@
 			(uuid "c0fec7ff-7a91-4544-abbf-8389fc442971")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D2")
 					(unit 1)
@@ -14794,7 +14685,7 @@
 			(uuid "a381cbde-6357-4155-954e-a6e6e5ca0d71")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR020")
 					(unit 1)
@@ -14872,89 +14763,9 @@
 			(uuid "1a6a7415-2918-4060-b68b-3aee003a1111")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 323.85 113.03 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80bbb3e1-bb5e-46b3-9d81-0c5317ff5a45")
-		(property "Reference" "J6"
-			(at 324.485 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 324.485 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 323.85 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 323.85 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 323.85 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "9b7d17aa-910c-4f5e-99c3-34ce98a47fbb")
-		)
-		(pin "1"
-			(uuid "daa70c61-2792-4127-9994-58cbdca33e8c")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -15030,7 +14841,7 @@
 			(uuid "f6585a52-8dc3-4bff-b545-6feec08e54f3")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR089")
 					(unit 1)
@@ -15136,7 +14947,7 @@
 			(uuid "144e9904-4296-40d2-86c5-d96a513a0a86")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "J1")
 					(unit 1)
@@ -15217,7 +15028,7 @@
 			(uuid "0b29c9d6-831b-41f0-8aae-422a3174286b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C5")
 					(unit 1)
@@ -15296,7 +15107,7 @@
 			(uuid "af760601-4682-4409-ba20-38ca3482e13b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#FLG011")
 					(unit 1)
@@ -15338,7 +15149,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 137.922 259.08 90)
 			(hide yes)
 			(show_name no)
@@ -15378,7 +15189,7 @@
 			(uuid "e859d5cf-1611-4a99-bea1-e3294c980198")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R16")
 					(unit 1)
@@ -15460,7 +15271,7 @@
 			(uuid "26376591-bcc7-44df-810d-86e5a4b2ef10")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C13")
 					(unit 1)
@@ -15553,7 +15364,7 @@
 			(uuid "82d7f405-a594-4fb0-b8c0-b133455fcb28")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D7")
 					(unit 1)
@@ -15634,7 +15445,7 @@
 			(uuid "25eeb3c0-a043-4f90-81ca-9cd343f763e1")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C44")
 					(unit 1)
@@ -15712,7 +15523,7 @@
 			(uuid "5c2e792c-b733-4376-9e2a-7955b59771d0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR02")
 					(unit 1)
@@ -15754,7 +15565,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 111.252 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -15794,7 +15605,7 @@
 			(uuid "fa5920e0-b4d6-43bc-8d18-7c9760f25098")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R11")
 					(unit 1)
@@ -15836,7 +15647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 361.442 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -15876,7 +15687,7 @@
 			(uuid "1c227b87-6d0c-403f-9c52-fc0ce91ee976")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R19")
 					(unit 1)
@@ -15955,7 +15766,7 @@
 			(uuid "1f3e0061-a66b-4c23-a317-44a18fddaecc")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR047")
 					(unit 1)
@@ -16032,7 +15843,7 @@
 			(uuid "ec49e26b-6870-4c48-85f7-9a2adbe6144a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H4")
 					(unit 1)
@@ -16125,7 +15936,7 @@
 			(uuid "e8659f33-803c-4c16-b1ac-45f227738f0e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D4")
 					(unit 1)
@@ -16203,7 +16014,7 @@
 			(uuid "b4210fee-3959-4bb2-809b-7b09bf6ae4b3")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR063")
 					(unit 1)
@@ -16281,7 +16092,7 @@
 			(uuid "fefb6a2f-d8eb-46c6-acfd-cd0f09349966")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR053")
 					(unit 1)
@@ -16320,7 +16131,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 98.552 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -16360,7 +16171,7 @@
 			(uuid "c6c83fec-c59a-4775-b279-18a67a6d9a56")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R9")
 					(unit 1)
@@ -16437,7 +16248,7 @@
 			(uuid "de03d4d6-208d-4156-be36-cdc104d0212a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H7")
 					(unit 1)
@@ -16514,7 +16325,7 @@
 			(uuid "50933c94-4960-45cf-8f05-d90a86e202f0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR040")
 					(unit 1)
@@ -16591,7 +16402,7 @@
 			(uuid "90d2a3d1-410b-4a35-8c8f-ae2d68d39690")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H2")
 					(unit 1)
@@ -16673,7 +16484,7 @@
 			(uuid "70dca7b6-1ab2-4317-90ec-52deea530c79")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "SW1")
 					(unit 1)
@@ -16755,7 +16566,7 @@
 			(uuid "a8d91403-eacb-49cb-a0b0-e757ea9bd1c8")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C12")
 					(unit 1)
@@ -16834,7 +16645,7 @@
 			(uuid "8c3ff33f-dd13-4551-8800-af0a04fbd7dc")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR093")
 					(unit 1)
@@ -16916,7 +16727,7 @@
 			(uuid "a67cad50-ab94-4957-9ad3-556f21212439")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "SW3")
 					(unit 1)
@@ -17009,7 +16820,7 @@
 			(uuid "020467ca-dbf3-4dd4-a3ae-97d41fad13dd")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D6")
 					(unit 1)
@@ -17091,7 +16902,7 @@
 			(uuid "9a95e848-e638-4aa9-8cce-fb599bd9df99")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C4")
 					(unit 1)
@@ -17179,7 +16990,7 @@
 			(uuid "05a70f3b-79c1-4360-96cf-b5954aca2909")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "Q1")
 					(unit 1)
@@ -17257,7 +17068,7 @@
 			(uuid "00312a1b-66ca-4ddf-afc2-9f4add75e010")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR096")
 					(unit 1)
@@ -17334,7 +17145,7 @@
 			(uuid "f4cdd44a-39ed-4caf-b827-8965e2903c69")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H8")
 					(unit 1)
@@ -17373,7 +17184,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 96.012 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -17413,7 +17224,7 @@
 			(uuid "3b983c89-9f57-4b2c-940e-dbd50e2fad86")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R8")
 					(unit 1)
@@ -17494,7 +17305,7 @@
 			(uuid "bc46efe7-b0b0-4552-ae3f-580f01a8291e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C8")
 					(unit 1)
@@ -17576,7 +17387,7 @@
 			(uuid "a791a8e4-9d7f-427c-8d2e-ca6daa8ac29b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "J7")
 					(unit 1)
@@ -17654,7 +17465,7 @@
 			(uuid "a70ed786-9151-4706-927a-01ca56721797")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR0101")
 					(unit 1)
@@ -17732,7 +17543,7 @@
 			(uuid "3f2be5e5-d4fb-4c5b-a531-d3b670c6621e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR035")
 					(unit 1)
@@ -17881,7 +17692,7 @@
 			(uuid "3c114217-892c-498c-97c3-2edbfca6f2e0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "U3")
 					(unit 1)
@@ -17958,7 +17769,7 @@
 			(uuid "067943bb-f3d1-4ace-8233-a9843a37c7cc")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "H5")
 					(unit 1)
@@ -18040,7 +17851,7 @@
 			(uuid "84069d7e-cad7-453c-982a-98e764a30ce5")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "SW2")
 					(unit 1)
@@ -18122,7 +17933,7 @@
 			(uuid "e915e02f-d00e-4299-bc7c-3c6f1cf4d7aa")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C9")
 					(unit 1)
@@ -18200,7 +18011,7 @@
 			(uuid "c27acfd2-e582-4916-bc71-0d4c4e9b140a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR03")
 					(unit 1)
@@ -18281,7 +18092,7 @@
 			(uuid "41d03bba-ed9c-42b6-a270-6f3df5683edd")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C2")
 					(unit 1)
@@ -18359,7 +18170,7 @@
 			(uuid "ac20548e-4453-4da8-b712-7a8af3f4e6e2")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR051")
 					(unit 1)
@@ -18437,7 +18248,7 @@
 			(uuid "dabfd753-fd94-48bc-8159-39b00bee2e84")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR050")
 					(unit 1)
@@ -18518,7 +18329,7 @@
 			(uuid "5979f6a8-c3c7-4649-9ea9-c072240db19a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C6")
 					(unit 1)
@@ -18596,7 +18407,7 @@
 			(uuid "02bbff53-4505-4a70-9cc9-07aa6546657f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR094")
 					(unit 1)
@@ -18638,7 +18449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 120.142 177.8 90)
 			(hide yes)
 			(show_name no)
@@ -18678,7 +18489,7 @@
 			(uuid "96bf102a-9e27-4518-8558-81e0d809844b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R12")
 					(unit 1)
@@ -18769,7 +18580,7 @@
 			(uuid "fed7fa55-0945-459a-b239-2dc17e7e1548")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "J5")
 					(unit 1)
@@ -18808,7 +18619,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 36.83 164.338 90)
 			(hide yes)
 			(show_name no)
@@ -18848,7 +18659,7 @@
 			(uuid "00720af9-fed5-44f0-9e0c-833278c08c7c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R5")
 					(unit 1)
@@ -18943,7 +18754,7 @@
 			(uuid "351dded8-fcc7-4c17-ac4b-a29878b3667e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D1")
 					(unit 1)
@@ -18985,7 +18796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 78.232 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -19025,7 +18836,7 @@
 			(uuid "240f4f38-f15f-48c4-bc94-0caa91eaeac5")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R7")
 					(unit 1)
@@ -19103,7 +18914,7 @@
 			(uuid "5202c162-22c8-4d9e-91d7-64eb801562f9")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR0100")
 					(unit 1)
@@ -19182,7 +18993,7 @@
 			(uuid "2941c34e-e16b-49ae-92c2-dde893586891")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR081")
 					(unit 1)
@@ -19260,7 +19071,7 @@
 			(uuid "40c8a51e-0388-4b06-a219-4fc9313c013c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR098")
 					(unit 1)
@@ -19339,7 +19150,7 @@
 			(uuid "d5d64751-b7e0-4ad0-a728-d8d14484df84")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR086")
 					(unit 1)
@@ -19432,7 +19243,7 @@
 			(uuid "7e3597ba-f75a-4595-ae1e-8dfc767b5f36")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "D5")
 					(unit 1)
@@ -19510,7 +19321,7 @@
 			(uuid "cf60b0f3-9cac-46d7-b4de-c38398c541e0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR09")
 					(unit 1)
@@ -19592,7 +19403,7 @@
 			(uuid "85a3809c-e730-408b-b386-348ab71dc004")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C15")
 					(unit 1)
@@ -19670,7 +19481,7 @@
 			(uuid "76240610-a193-417c-a9c7-bf9cd8496e4c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR024")
 					(unit 1)
@@ -19747,7 +19558,7 @@
 			(uuid "740f5423-d8a4-4790-b9f5-02e3ce1d0c05")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR023")
 					(unit 1)
@@ -19825,7 +19636,7 @@
 			(uuid "1a861c7d-ac51-4127-80c1-3bd088279fe4")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR038")
 					(unit 1)
@@ -19867,7 +19678,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 76.962 96.52 90)
 			(hide yes)
 			(show_name no)
@@ -19907,7 +19718,7 @@
 			(uuid "5f8c3362-a57a-486a-ba95-c8c432f27ea2")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "R6")
 					(unit 1)
@@ -19985,7 +19796,7 @@
 			(uuid "4561ffe4-3670-424b-bffe-6083b56dbcd8")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR084")
 					(unit 1)
@@ -20063,7 +19874,7 @@
 			(uuid "90edee40-cfd1-4ec3-86cd-95d833ebb541")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "#PWR08")
 					(unit 1)
@@ -20145,7 +19956,7 @@
 			(uuid "f551f45d-9bfb-47b8-b345-6b081c1486ae")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(reference "C1")
 					(unit 1)
@@ -20191,7 +20002,7 @@
 			)
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(page "2")
 				)
@@ -20316,7 +20127,7 @@
 			)
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(page "3")
 				)
@@ -20372,7 +20183,7 @@
 			)
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(page "4")
 				)
@@ -20417,7 +20228,7 @@
 			)
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14"
 					(page "5")
 				)

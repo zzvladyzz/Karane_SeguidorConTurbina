@@ -1999,7 +1999,7 @@
 			(uuid "37304b7a-5218-4137-805b-6e7e627a2724")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "C39")
 					(unit 1)
@@ -2078,7 +2078,7 @@
 			(uuid "e5450aa8-b0ee-490f-b313-abdcf17e0282")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "#FLG07")
 					(unit 1)
@@ -2160,7 +2160,7 @@
 			(uuid "c6c0b9cc-e1f6-4743-be7d-b19db7b4c2e9")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "R61")
 					(unit 1)
@@ -2251,7 +2251,7 @@
 			(uuid "0e3c0986-7d84-4f94-bb1b-39c29975aad3")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "J15")
 					(unit 1)
@@ -2351,7 +2351,7 @@
 			(uuid "e255c038-4213-4e4f-8201-781e87cb8bc4")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "U27")
 					(unit 1)
@@ -2451,7 +2451,7 @@
 			(uuid "4ae930db-daae-4a24-a1f0-ccf74e7e0981")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "U28")
 					(unit 1)
@@ -2531,7 +2531,7 @@
 			(uuid "e2847a32-206a-4dcd-a5ed-94c210dc3237")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "JP2")
 					(unit 1)
@@ -2622,7 +2622,7 @@
 			(uuid "445420ae-e0de-4552-961b-029aa7cede48")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "J16")
 					(unit 1)
@@ -2701,7 +2701,7 @@
 			(uuid "defdb199-2632-4fe8-ad42-aa5103f3669d")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "#FLG08")
 					(unit 1)
@@ -2781,7 +2781,7 @@
 			(uuid "90d5f7fe-5a01-45de-bade-7d01b12c7d51")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "JP1")
 					(unit 1)
@@ -2860,7 +2860,7 @@
 			(uuid "188b9056-7670-43de-aa37-9b930da4fe8a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "#FLG010")
 					(unit 1)
@@ -2939,7 +2939,7 @@
 			(uuid "770cf4c3-550e-4b5f-9547-919b17c2158a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "#FLG09")
 					(unit 1)
@@ -3020,7 +3020,7 @@
 			(uuid "44aae62f-8555-4280-8783-f69d98e10bb8")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "C41")
 					(unit 1)
@@ -3102,7 +3102,7 @@
 			(uuid "bb3d27a3-f424-4805-abe5-542d3bca3870")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/f114eb8e-0d54-4743-99d0-5b8ba6d5a2a1"
 					(reference "R62")
 					(unit 1)

@@ -510,7 +510,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Karane_Kicad.kicad_pro",
+    "filename": "Inda_Kicad.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -685,8 +685,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Karane_Kicad.kicad_sch",
-        "name": "Karane_Kicad",
+        "filename": "Inda_Kicad.kicad_sch",
+        "name": "Inda_Kicad",
         "uuid": "65dfbecc-0fbf-480c-951c-b0d4a210bc14"
       }
     ],
@@ -696,7 +696,7 @@
   "sheets": [
     [
       "65dfbecc-0fbf-480c-951c-b0d4a210bc14",
-      "Karane_Kicad"
+      "Inda_Kicad"
     ],
     [
       "026b5258-1e8a-411a-a969-eda822940e0a",

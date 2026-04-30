@@ -337,172 +337,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Zener"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Zener"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Zener diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_Zener_0_1"
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Zener_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -2959,12 +2793,6 @@
 		(uuid "01920b3e-dd73-41f7-b963-8ada14347bcf")
 	)
 	(junction
-		(at 74.93 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02321f08-b2a1-4a82-8e99-3cbdf7ea7e3e")
-	)
-	(junction
 		(at 252.73 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2975,6 +2803,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1afe2b15-c0d9-411d-a3ee-a28e2748bd17")
+	)
+	(junction
+		(at 74.93 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fc47ba2-4d1a-4a41-9b96-11677abeddfa")
 	)
 	(junction
 		(at 238.76 38.1)
@@ -2993,18 +2827,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "315ea8ba-05e8-4fd9-b3e6-560baf8da6ae")
-	)
-	(junction
-		(at 74.93 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4072ab91-fc2b-4ca5-a320-ec10459a084a")
-	)
-	(junction
-		(at 67.31 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4995b791-7dc6-4343-869f-250fe1f32ee9")
 	)
 	(junction
 		(at 213.36 68.58)
@@ -3043,6 +2865,12 @@
 		(uuid "72e91947-5f3d-40ea-a171-80ee41f94b84")
 	)
 	(junction
+		(at 74.93 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77818f77-32ba-44bc-a93e-9a62298db91e")
+	)
+	(junction
 		(at 81.28 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3079,24 +2907,6 @@
 		(uuid "936f3e24-79b4-4302-926e-37e4faca2fbb")
 	)
 	(junction
-		(at 74.93 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9c960de1-a6e4-4083-93fe-acda258130b4")
-	)
-	(junction
-		(at 39.37 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a151b206-993a-48e0-a878-f0cd81d06230")
-	)
-	(junction
-		(at 123.19 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a54854da-09b6-4edd-86f9-a423ad01bb82")
-	)
-	(junction
 		(at 187.96 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3109,22 +2919,10 @@
 		(uuid "c1335bcd-ca78-4224-988e-5623ac477ff4")
 	)
 	(junction
-		(at 71.12 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9df5a70-8969-4665-8506-fe43a8df73f7")
-	)
-	(junction
 		(at 123.19 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb5cc208-c830-4c6a-afbd-f72cf7ad0cc2")
-	)
-	(junction
-		(at 85.09 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dcb7cfa3-f840-4eee-9e94-897278c2bc76")
 	)
 	(junction
 		(at 238.76 68.58)
@@ -3180,7 +2978,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 69.85) (xy 88.9 69.85)
+			(xy 74.93 69.85) (xy 88.9 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3197,16 +2995,6 @@
 			(type default)
 		)
 		(uuid "0dad1ec9-d63e-433f-b9a1-9af338e88deb")
-	)
-	(wire
-		(pts
-			(xy 71.12 80.01) (xy 63.5 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "115b967d-6fd0-4ba5-93a0-24508a48f90b")
 	)
 	(wire
 		(pts
@@ -3227,26 +3015,6 @@
 			(type default)
 		)
 		(uuid "120c46cd-6b39-4bc0-b633-7e969d20a513")
-	)
-	(wire
-		(pts
-			(xy 74.93 69.85) (xy 85.09 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13982499-4f9d-4748-b2be-d3b1579f009f")
-	)
-	(wire
-		(pts
-			(xy 43.18 82.55) (xy 39.37 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "155d53b6-9e6f-4e19-bc46-9d053e7f5d2e")
 	)
 	(wire
 		(pts
@@ -3300,16 +3068,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 72.39) (xy 123.19 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25a6becf-fadd-4dba-808b-c754749f457d")
-	)
-	(wire
-		(pts
 			(xy 252.73 57.15) (xy 252.73 68.58)
 		)
 		(stroke
@@ -3360,16 +3118,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 100.33) (xy 74.93 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d9e7d66-d118-4412-9e88-0a6df8868e0f")
-	)
-	(wire
-		(pts
 			(xy 151.13 41.91) (xy 161.29 41.91)
 		)
 		(stroke
@@ -3387,16 +3135,6 @@
 			(type default)
 		)
 		(uuid "2fbdca04-4d34-4fac-a28f-f9d2a6df4431")
-	)
-	(wire
-		(pts
-			(xy 74.93 96.52) (xy 74.93 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31732038-2d2f-42bc-8e39-966c18c3cf89")
 	)
 	(wire
 		(pts
@@ -3420,13 +3158,13 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 69.85) (xy 71.12 69.85)
+			(xy 74.93 81.28) (xy 74.93 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3a969f80-1f2c-44cf-83ab-2dcc46e626ee")
+		(uuid "3c0fad50-f72e-41e9-85b7-46458ce69b5f")
 	)
 	(wire
 		(pts
@@ -3440,17 +3178,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 82.55) (xy 39.37 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d8312e3-f9fd-4d2b-ad87-ebf39bc89332")
-	)
-	(wire
-		(pts
-			(xy 36.83 66.04) (xy 38.1 66.04)
+			(xy 58.42 63.5) (xy 59.69 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3540,16 +3268,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 81.28) (xy 74.93 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "597f5145-5bfa-4649-8133-e36a94d9b102")
-	)
-	(wire
-		(pts
 			(xy 54.61 163.83) (xy 66.04 163.83)
 		)
 		(stroke
@@ -3600,26 +3318,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 85.09) (xy 63.5 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "658cd309-28c5-4c30-874a-7d1e12f27182")
-	)
-	(wire
-		(pts
-			(xy 85.09 96.52) (xy 85.09 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6733d1c7-dea6-4afc-868d-c753115e2f45")
-	)
-	(wire
-		(pts
 			(xy 81.28 161.29) (xy 81.28 163.83)
 		)
 		(stroke
@@ -3647,26 +3345,6 @@
 			(type default)
 		)
 		(uuid "6cc3ea96-8adf-454b-a8eb-b3bb0f3aa3b9")
-	)
-	(wire
-		(pts
-			(xy 74.93 100.33) (xy 74.93 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7009d14e-4347-423a-914c-de13d1a7c05c")
-	)
-	(wire
-		(pts
-			(xy 74.93 69.85) (xy 74.93 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70925ca4-5f37-40c0-9230-7883106becb2")
 	)
 	(wire
 		(pts
@@ -3720,26 +3398,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 74.93) (xy 67.31 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76c5e394-7367-459c-bd52-8393861b92ee")
-	)
-	(wire
-		(pts
-			(xy 85.09 69.85) (xy 85.09 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d50c032-37b9-4f8d-83c0-900f57bdda8a")
-	)
-	(wire
-		(pts
 			(xy 271.78 130.81) (xy 271.78 135.89)
 		)
 		(stroke
@@ -3757,16 +3415,6 @@
 			(type default)
 		)
 		(uuid "7f5a2476-0ce9-4d9d-b1bd-bd0e39165f17")
-	)
-	(wire
-		(pts
-			(xy 36.83 72.39) (xy 39.37 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86e95726-af2a-4837-a206-9822ee27e2a1")
 	)
 	(wire
 		(pts
@@ -3870,6 +3518,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 69.85) (xy 74.93 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ef16b8-dd1c-4b75-911d-7ff74eafaebe")
+	)
+	(wire
+		(pts
 			(xy 72.39 113.03) (xy 72.39 118.11)
 		)
 		(stroke
@@ -3940,26 +3598,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 72.39) (xy 43.18 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b41fd17d-7ec2-4365-8e73-123eb3a4c562")
-	)
-	(wire
-		(pts
-			(xy 63.5 74.93) (xy 67.31 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b77dfbd7-7034-4887-92a4-1ae0be19bfe5")
-	)
-	(wire
-		(pts
 			(xy 81.28 138.43) (xy 90.17 138.43)
 		)
 		(stroke
@@ -4000,16 +3638,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 66.04) (xy 129.54 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c557050a-3372-4a7a-bfb9-f78523619fa2")
-	)
-	(wire
-		(pts
 			(xy 88.9 69.85) (xy 95.25 69.85)
 		)
 		(stroke
@@ -4027,16 +3655,6 @@
 			(type default)
 		)
 		(uuid "ccacfbc5-7cb1-443d-87a7-ccd10f7c2451")
-	)
-	(wire
-		(pts
-			(xy 71.12 69.85) (xy 71.12 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d007a8f8-3319-411c-be77-f400a75d521e")
 	)
 	(wire
 		(pts
@@ -4100,16 +3718,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 85.09) (xy 74.93 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de7df970-4fec-47db-a835-d39b18f3cdd6")
-	)
-	(wire
-		(pts
 			(xy 242.57 114.3) (xy 242.57 119.38)
 		)
 		(stroke
@@ -4140,7 +3748,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 85.09) (xy 74.93 88.9)
+			(xy 74.93 85.09) (xy 74.93 102.87)
 		)
 		(stroke
 			(width 0)
@@ -4190,16 +3798,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 69.85) (xy 74.93 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5c7354c-dfa7-4b96-a324-6efac7290fb6")
-	)
-	(wire
-		(pts
 			(xy 252.73 68.58) (xy 238.76 68.58)
 		)
 		(stroke
@@ -4207,6 +3805,16 @@
 			(type default)
 		)
 		(uuid "f43e8039-455c-418d-981c-ab3d93341b1d")
+	)
+	(wire
+		(pts
+			(xy 58.42 69.85) (xy 74.93 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6500206-b87f-4c42-9b4e-38e2f3ec31a6")
 	)
 	(wire
 		(pts
@@ -4294,7 +3902,7 @@
 	)
 	(symbol
 		(lib_id "Micromouse_Library:Conector_XT30")
-		(at 25.4 66.04 0)
+		(at 46.99 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4305,7 +3913,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ac81a2c-786c-4852-a750-a96c38a38bb6")
 		(property "Reference" "J11"
-			(at 27.94 57.15 0)
+			(at 49.53 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4315,7 +3923,7 @@
 			)
 		)
 		(property "Value" "XT30_BATT"
-			(at 27.94 59.69 0)
+			(at 49.53 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4325,7 +3933,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
-			(at 25.4 66.04 0)
+			(at 46.99 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4336,7 +3944,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 66.04 0)
+			(at 46.99 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4347,7 +3955,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 25.4 66.04 0)
+			(at 46.99 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4364,7 +3972,7 @@
 			(uuid "e1216c7e-22e1-47f6-9477-113b9647bf0e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "J11")
 					(unit 1)
@@ -4444,7 +4052,7 @@
 			(uuid "1e655dec-41b8-469b-a252-e9ed602ab471")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "R58")
 					(unit 1)
@@ -4525,7 +4133,7 @@
 			(uuid "72dab7f7-fc70-4721-b90e-0d79a7c07d81")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C31")
 					(unit 1)
@@ -4603,7 +4211,7 @@
 			(uuid "fc608970-12eb-4722-bbc9-6c3e8432e97b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR079")
 					(unit 1)
@@ -4685,7 +4293,7 @@
 			(uuid "7dbd1313-1829-4637-8ad5-73c8f1b74ee9")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C37")
 					(unit 1)
@@ -4766,7 +4374,7 @@
 			(uuid "aa0c9f28-2682-466e-a761-19c1480a03c6")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C33")
 					(unit 1)
@@ -4844,7 +4452,7 @@
 			(uuid "e5b05d6c-1ed0-4924-a4d2-c79e4ef88dc0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#FLG06")
 					(unit 1)
@@ -4922,7 +4530,7 @@
 			(uuid "5fe0fa5f-8885-4727-9d33-e20625830da5")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR076")
 					(unit 1)
@@ -4932,7 +4540,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 85.09 92.71 0)
+		(at 74.93 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4943,7 +4551,7 @@
 		(fields_autoplaced yes)
 		(uuid "376519d2-42a3-4645-898d-4b7d136e5057")
 		(property "Reference" "R57"
-			(at 87.63 91.4399 0)
+			(at 77.47 76.1999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4954,7 +4562,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 87.63 93.9799 0)
+			(at 77.47 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4965,7 +4573,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 83.312 92.71 90)
+			(at 73.152 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4976,7 +4584,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 92.71 0)
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4987,7 +4595,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 85.09 92.71 0)
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5004,90 +4612,9 @@
 			(uuid "ac8db63a-c50f-4303-b5c4-9c6be4f9433c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "R57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Micromouse_Library:Conector_XT30")
-		(at 142.24 66.04 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "398ff1dd-0d5d-45a2-adbd-198494a4915d")
-		(property "Reference" "J14"
-			(at 139.7 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XT30_LIPO"
-			(at 139.7 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
-			(at 142.24 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 142.24 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ff1c78cb-165e-41d7-bcec-200f9ac4c670")
-		)
-		(pin "2"
-			(uuid "62e172d7-a631-4d3c-8d65-13554d17c39d")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
-					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -5166,7 +4693,7 @@
 			(uuid "00e46b10-1ff4-4df0-a410-759d9f597d51")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C34")
 					(unit 1)
@@ -5248,7 +4775,7 @@
 			(uuid "92ee8a6b-473e-4932-8169-7bde4bd2a497")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "R60")
 					(unit 1)
@@ -5329,91 +4856,9 @@
 			(uuid "a563db5b-775b-476a-9cf1-2f10ce024db3")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 74.93 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "476fee15-15f3-449f-8b30-d11e3ab8f855")
-		(property "Reference" "R55"
-			(at 77.47 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 77.47 93.9799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 73.152 92.71 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 74.93 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "44133168-e12b-456e-b1d2-e8cb4b82b9dd")
-		)
-		(pin "1"
-			(uuid "782b15f5-e3cf-44e5-80a9-3f7126fa09df")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
-					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -5500,7 +4945,7 @@
 			(uuid "85600d93-affe-4081-88ee-92e8523f2958")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "U29")
 					(unit 1)
@@ -5589,101 +5034,9 @@
 			(uuid "aaf389d6-4987-4a8f-938f-aa981fae30d8")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "U26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Micromouse_Library:SQJ951EP-T1_BE3")
-		(at 53.34 77.47 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5c1e6853-2d53-4eca-8d2d-20f27e086ce3")
-		(property "Reference" "J12"
-			(at 53.34 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SQJ951EP"
-			(at 53.34 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:PowerPAK_SO-8_Dual"
-			(at 49.53 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 53.34 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "7a2f284f-d4d7-4729-b88a-c887823395ff")
-		)
-		(pin "2"
-			(uuid "e7480df7-cc25-4406-9d35-1a9612b53251")
-		)
-		(pin "5"
-			(uuid "acc43096-8497-49f0-836b-a1cde7448cad")
-		)
-		(pin "1"
-			(uuid "73fd85b3-f623-49f5-b37d-5947efe4c4a9")
-		)
-		(pin "3"
-			(uuid "acdaa045-bf05-495f-b698-ca6671750933")
-		)
-		(pin "4"
-			(uuid "b4f17705-c22f-46e2-be6d-dad1103b46d6")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
-					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -5759,7 +5112,7 @@
 			(uuid "c55758bb-4750-4731-9962-703e983ab9e4")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR067")
 					(unit 1)
@@ -5860,7 +5213,7 @@
 			(uuid "68c73e39-3702-4dff-a7d1-badda86264c6")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "U25")
 					(unit 1)
@@ -5938,7 +5291,7 @@
 			(uuid "ef2d6ce2-508c-4c96-9cdb-9d005bad3eef")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR082")
 					(unit 1)
@@ -6019,7 +5372,7 @@
 			(uuid "2ac46a10-d79e-4225-a8fb-63e30daa662f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C30")
 					(unit 1)
@@ -6029,7 +5382,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 66.04 90)
+		(at 59.69 63.5 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6040,7 +5393,7 @@
 		(fields_autoplaced yes)
 		(uuid "864ff87e-136c-46e0-8532-54a0b6dc316f")
 		(property "Reference" "#PWR065"
-			(at 44.45 66.04 0)
+			(at 66.04 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6051,7 +5404,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 66.0399 90)
+			(at 63.5 63.4999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6062,7 +5415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 66.04 0)
+			(at 59.69 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6073,7 +5426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 66.04 0)
+			(at 59.69 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6084,7 +5437,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 66.04 0)
+			(at 59.69 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6098,91 +5451,9 @@
 			(uuid "6ae9438b-03c8-4cbf-a49a-9842e163aaa0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 74.93 77.47 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92626f56-b3c0-476b-9429-f3f355b8cbbc")
-		(property "Reference" "D9"
-			(at 77.47 76.1999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "12v"
-			(at 77.47 78.7399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 74.93 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 74.93 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "83197630-2523-4b3b-a162-a182c2925377")
-		)
-		(pin "2"
-			(uuid "9a2248fb-ec6a-4972-b4fb-1ba2d2c47a5e")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
-					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -6258,7 +5529,7 @@
 			(uuid "38a517ba-37de-4fe2-802a-a2494cc70947")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR070")
 					(unit 1)
@@ -6336,7 +5607,7 @@
 			(uuid "d09ebc49-faa8-41ea-a144-ec86ba2f6c4f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR075")
 					(unit 1)
@@ -6414,7 +5685,7 @@
 			(uuid "7e93b0ea-ee76-461d-9e61-a5144f17a994")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR083")
 					(unit 1)
@@ -6492,7 +5763,7 @@
 			(uuid "0cc3d0dd-85ad-4856-85b5-2d9718dacf41")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR071")
 					(unit 1)
@@ -6583,7 +5854,7 @@
 			(uuid "2efa9a7b-5d2e-49d8-9590-7ab5a172d68a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "J13")
 					(unit 1)
@@ -6665,7 +5936,7 @@
 			(uuid "9385c280-acb5-4f21-9c03-1d3d89d2b4ed")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "R56")
 					(unit 1)
@@ -6743,7 +6014,7 @@
 			(uuid "9f185d0f-ef24-426c-b251-7ef4a1420a67")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR077")
 					(unit 1)
@@ -6822,7 +6093,7 @@
 			(uuid "e4eb3349-891d-4ac5-8857-3153fd5f964e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR073")
 					(unit 1)
@@ -6901,7 +6172,7 @@
 			(uuid "efc3f328-6d0a-4d8d-9b8e-377d5fa556d2")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#FLG05")
 					(unit 1)
@@ -6979,7 +6250,7 @@
 			(uuid "5e99c977-4a7b-4aa9-a621-67a832b49f59")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR074")
 					(unit 1)
@@ -7060,7 +6331,7 @@
 			(uuid "4bfdb684-5d91-43d9-a308-868476a7bff5")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C42")
 					(unit 1)
@@ -7142,89 +6413,9 @@
 			(uuid "a202add8-c275-4b2e-8463-ff90ab1ec127")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 129.54 66.04 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cee5c70d-1767-472d-be02-87caea7f46be")
-		(property "Reference" "#PWR068"
-			(at 123.19 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 125.73 66.0399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 129.54 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 129.54 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6526d4c1-02fc-4b50-a66c-32b6712632fa")
-		)
-		(instances
-			(project "Karane_Kicad"
-				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
-					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -7300,7 +6491,7 @@
 			(uuid "d0b38d96-c762-47e0-b876-6d31d8c6a6aa")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR072")
 					(unit 1)
@@ -7381,7 +6572,7 @@
 			(uuid "6e61e619-0320-48eb-b75e-d7bbb867c9a5")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C32")
 					(unit 1)
@@ -7459,7 +6650,7 @@
 			(uuid "99e23d41-dc65-4ac8-9ad3-826a85448142")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR069")
 					(unit 1)
@@ -7537,7 +6728,7 @@
 			(uuid "040ea0fb-0ba0-46c6-a6d4-bbac623c8e7c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR078")
 					(unit 1)
@@ -7618,7 +6809,7 @@
 			(uuid "abd9345f-88f3-4892-b657-5aa84c7bded2")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C35")
 					(unit 1)
@@ -7711,7 +6902,7 @@
 			(uuid "6f294a63-4fa5-4e9c-a70d-1c31bb97660b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "D10")
 					(unit 1)
@@ -7789,7 +6980,7 @@
 			(uuid "779049d4-3d6e-4c7a-ac6b-72e07b0a7445")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR066")
 					(unit 1)
@@ -7870,7 +7061,7 @@
 			(uuid "94875dc4-6fd0-463c-8d24-ce3c3580ae8b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "C36")
 					(unit 1)
@@ -7950,7 +7141,7 @@
 			(uuid "840c6e29-f24f-403b-a1b3-6ba52f45fba2")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "L1")
 					(unit 1)
@@ -8029,7 +7220,7 @@
 			(uuid "ba259ed1-b651-4c08-a991-461b33aa1c28")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "#PWR080")
 					(unit 1)
@@ -8112,7 +7303,7 @@
 			(uuid "783b46c0-7016-47a8-8616-96d9832b3ee3")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "SW5")
 					(unit 1)
@@ -8194,7 +7385,7 @@
 			(uuid "0afc5bd7-836d-4cc3-b472-035555729980")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/e468b3be-adc2-4f31-828e-24b4692370ed"
 					(reference "R59")
 					(unit 1)

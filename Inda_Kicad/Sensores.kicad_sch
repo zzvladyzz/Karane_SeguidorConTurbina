@@ -5511,7 +5511,7 @@
 			(uuid "20178238-ecb5-442e-ba5c-f26b2cfa1d1b")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "C18")
 					(unit 1)
@@ -5660,7 +5660,7 @@
 			(uuid "de9e97e0-2300-4b89-a96a-6957d864c935")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U16")
 					(unit 1)
@@ -5747,7 +5747,7 @@
 			(uuid "fcab5216-969b-46ce-8638-55dcc1960a12")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U7")
 					(unit 1)
@@ -5789,7 +5789,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 122.682 162.56 90)
 			(hide yes)
 			(show_name no)
@@ -5829,7 +5829,7 @@
 			(uuid "df010319-000e-46b7-b024-949861aaa9ed")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R43")
 					(unit 1)
@@ -5871,7 +5871,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 99.822 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -5911,7 +5911,7 @@
 			(uuid "29d94ddb-f351-4325-b5f1-223b473d9a0c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R35")
 					(unit 1)
@@ -6017,7 +6017,7 @@
 			(uuid "db1de3b9-1bac-47f5-831f-a73c17780260")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "J8")
 					(unit 1)
@@ -6059,7 +6059,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 99.822 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -6099,7 +6099,7 @@
 			(uuid "cdff2287-1ed1-4bd5-8dcb-a9191a76e4d8")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R34")
 					(unit 1)
@@ -6186,7 +6186,7 @@
 			(uuid "688efb46-0940-4790-b763-36c9318154a9")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U14")
 					(unit 1)
@@ -6228,7 +6228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 45.212 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -6268,7 +6268,7 @@
 			(uuid "59010088-1fe1-43ed-9810-9d54429ea10d")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R23")
 					(unit 1)
@@ -6310,7 +6310,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 170.942 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -6350,7 +6350,7 @@
 			(uuid "b5fbdfba-fb19-4f95-9773-3af3d608a100")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R44")
 					(unit 1)
@@ -6392,7 +6392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 43.942 110.49 90)
 			(hide yes)
 			(show_name no)
@@ -6432,7 +6432,7 @@
 			(uuid "104f3f32-9503-4209-be58-5e6ee95d070d")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R20")
 					(unit 1)
@@ -6474,7 +6474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 225.552 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -6514,7 +6514,7 @@
 			(uuid "0baf8584-a545-4e76-9002-1f133a903921")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R49")
 					(unit 1)
@@ -6601,7 +6601,7 @@
 			(uuid "24b43d18-4da7-41d5-8e70-7ed89a86ab08")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U17")
 					(unit 1)
@@ -6643,7 +6643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 45.212 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -6683,7 +6683,7 @@
 			(uuid "9d105d98-d609-4fb4-9bee-76ea39099a50")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R24")
 					(unit 1)
@@ -6770,7 +6770,7 @@
 			(uuid "13299995-a2d5-4473-acf1-30c8a08e36d6")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U11")
 					(unit 1)
@@ -6848,7 +6848,7 @@
 			(uuid "04a542f9-a983-459b-803d-8e073a688082")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "#FLG03")
 					(unit 1)
@@ -6935,7 +6935,7 @@
 			(uuid "c4349990-3ad5-420c-a108-a744fd3f8b53")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U20")
 					(unit 1)
@@ -6977,7 +6977,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 122.682 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -7017,7 +7017,7 @@
 			(uuid "11f43af0-5c07-4f97-ab0a-1eef20b4eb1e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R41")
 					(unit 1)
@@ -7099,7 +7099,7 @@
 			(uuid "e55eb845-0383-43b5-a9db-84266bcacf78")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "C22")
 					(unit 1)
@@ -7186,7 +7186,7 @@
 			(uuid "50f27b22-9f47-4f8e-9b17-c24a13e3ec8c")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U19")
 					(unit 1)
@@ -7228,7 +7228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 45.212 162.56 90)
 			(hide yes)
 			(show_name no)
@@ -7268,7 +7268,7 @@
 			(uuid "4c8609ad-a019-4b9f-a4d4-94bd3966cb7e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R25")
 					(unit 1)
@@ -7355,7 +7355,7 @@
 			(uuid "e56b5d79-875f-46e7-badd-29d3d0d6af67")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U5")
 					(unit 1)
@@ -7442,7 +7442,7 @@
 			(uuid "48e004a6-fe32-4dd3-9041-3b2e47d90fdd")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U8")
 					(unit 1)
@@ -7484,7 +7484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 99.822 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -7524,7 +7524,7 @@
 			(uuid "a01df787-f926-42be-921b-675950c856c9")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R36")
 					(unit 1)
@@ -7566,7 +7566,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 66.802 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -7606,7 +7606,7 @@
 			(uuid "723b6c7b-180e-4502-89df-4994093f7a71")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R27")
 					(unit 1)
@@ -7693,7 +7693,7 @@
 			(uuid "c61bd1de-4b78-4eef-ad9c-7f919b399cbb")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U4")
 					(unit 1)
@@ -7735,7 +7735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 121.412 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -7775,7 +7775,7 @@
 			(uuid "2398d034-8c72-449f-9196-c080b6b0bfde")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R39")
 					(unit 1)
@@ -7862,7 +7862,7 @@
 			(uuid "16f0f99b-cad8-4170-afea-3e6dca53ea76")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U13")
 					(unit 1)
@@ -7904,7 +7904,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 68.072 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -7944,7 +7944,7 @@
 			(uuid "049a6f36-8e90-46e2-8317-dace939c976e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R30")
 					(unit 1)
@@ -7986,7 +7986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 66.802 110.49 90)
 			(hide yes)
 			(show_name no)
@@ -8026,7 +8026,7 @@
 			(uuid "ac0c5330-8676-4695-be92-7f4d2c8494c7")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R26")
 					(unit 1)
@@ -8068,7 +8068,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 45.212 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -8108,7 +8108,7 @@
 			(uuid "21b55e4e-d284-492d-8d05-17ae4f452ca1")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R22")
 					(unit 1)
@@ -8190,7 +8190,7 @@
 			(uuid "fc41881b-6fdc-4a28-8d6e-6241205972d8")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "C19")
 					(unit 1)
@@ -8232,7 +8232,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 68.072 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -8272,7 +8272,7 @@
 			(uuid "74fe0138-9a52-47a0-9a93-8922903bd024")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R28")
 					(unit 1)
@@ -8359,7 +8359,7 @@
 			(uuid "ca35db85-a77a-4580-9576-a8d68f62e179")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U18")
 					(unit 1)
@@ -8446,7 +8446,7 @@
 			(uuid "8b5caa36-74e7-4638-b9fb-7652bfc986ec")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U9")
 					(unit 1)
@@ -8488,7 +8488,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 121.412 110.49 90)
 			(hide yes)
 			(show_name no)
@@ -8528,7 +8528,7 @@
 			(uuid "8c690f82-2555-4187-a09c-ea463f99b17f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R38")
 					(unit 1)
@@ -8570,7 +8570,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 200.152 76.2 90)
 			(hide yes)
 			(show_name no)
@@ -8610,7 +8610,7 @@
 			(uuid "c6227bf6-eb21-4c5f-8df5-163482df03de")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R48")
 					(unit 1)
@@ -8652,7 +8652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 122.682 30.48 90)
 			(hide yes)
 			(show_name no)
@@ -8692,7 +8692,7 @@
 			(uuid "c65edd15-60af-42a0-bed2-427e8fc0e217")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R40")
 					(unit 1)
@@ -8779,7 +8779,7 @@
 			(uuid "d7cd4022-8982-4247-bd15-1d7f9e51839f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U6")
 					(unit 1)
@@ -8857,7 +8857,7 @@
 			(uuid "5866abf0-c361-46b5-bb89-9d0cdf9460ba")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "#FLG04")
 					(unit 1)
@@ -8899,7 +8899,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 68.072 162.56 90)
 			(hide yes)
 			(show_name no)
@@ -8939,7 +8939,7 @@
 			(uuid "1cb55f64-0ee7-463a-ae4e-f1a9d3b6b7a1")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R31")
 					(unit 1)
@@ -8981,7 +8981,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 225.552 143.51 90)
 			(hide yes)
 			(show_name no)
@@ -9021,7 +9021,7 @@
 			(uuid "d2e39e3d-b3f1-4a21-b61f-bd873b6dc4e0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R50")
 					(unit 1)
@@ -9108,7 +9108,7 @@
 			(uuid "dd2ec6d7-b148-4a31-a2f1-1738d37684bf")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U12")
 					(unit 1)
@@ -9150,7 +9150,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 99.822 162.56 90)
 			(hide yes)
 			(show_name no)
@@ -9190,7 +9190,7 @@
 			(uuid "6ae1ea92-2a4c-443d-b23c-88b4382489d0")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R37")
 					(unit 1)
@@ -9232,7 +9232,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 122.682 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -9272,7 +9272,7 @@
 			(uuid "57a72be4-e7cf-4e7f-802c-50d55b85af2a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R42")
 					(unit 1)
@@ -9314,7 +9314,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 43.942 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -9354,7 +9354,7 @@
 			(uuid "d4176004-d7f5-41b5-81ff-6bbfbd04c087")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R21")
 					(unit 1)
@@ -9396,7 +9396,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 98.552 137.16 90)
 			(hide yes)
 			(show_name no)
@@ -9436,7 +9436,7 @@
 			(uuid "f5bc59f9-cb87-4a6a-9f68-7b96d8aaf5f9")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R33")
 					(unit 1)
@@ -9478,7 +9478,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 248.412 143.51 90)
 			(hide yes)
 			(show_name no)
@@ -9518,7 +9518,7 @@
 			(uuid "5274d063-dd3f-4bef-9fcd-0f3c5b19dcf3")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R52")
 					(unit 1)
@@ -9605,7 +9605,7 @@
 			(uuid "fd106a67-0c0e-4706-aa65-922fd143375f")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U10")
 					(unit 1)
@@ -9647,7 +9647,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 193.802 143.51 90)
 			(hide yes)
 			(show_name no)
@@ -9687,7 +9687,7 @@
 			(uuid "49e4abce-d6d0-441d-9c1b-975749ae2bf1")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R47")
 					(unit 1)
@@ -9729,7 +9729,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 248.412 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -9769,7 +9769,7 @@
 			(uuid "14565368-879e-491b-9778-b93255e3498e")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R51")
 					(unit 1)
@@ -9851,7 +9851,7 @@
 			(uuid "a42dd3b9-456c-427d-acb0-ace4bff18ed6")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "C21")
 					(unit 1)
@@ -9893,7 +9893,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 98.552 110.49 90)
 			(hide yes)
 			(show_name no)
@@ -9933,7 +9933,7 @@
 			(uuid "fd95389b-8232-49c3-9177-2030a3daedcb")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R32")
 					(unit 1)
@@ -10015,7 +10015,7 @@
 			(uuid "80932340-0914-4060-86bc-f70296a86de2")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "C20")
 					(unit 1)
@@ -10057,7 +10057,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 68.072 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -10097,7 +10097,7 @@
 			(uuid "5fcbac02-1a6a-4390-84a2-7b1a608ec922")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R29")
 					(unit 1)
@@ -10139,7 +10139,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 193.802 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -10179,7 +10179,7 @@
 			(uuid "52203cb2-c27a-4323-b5c9-7c1fe27dc084")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R46")
 					(unit 1)
@@ -10266,7 +10266,7 @@
 			(uuid "b89ea587-22e8-4a54-963e-2e7b177bedae")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "U15")
 					(unit 1)
@@ -10308,7 +10308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 170.942 143.51 90)
 			(hide yes)
 			(show_name no)
@@ -10348,7 +10348,7 @@
 			(uuid "55f97ad2-730b-4a70-83c2-9516b029696a")
 		)
 		(instances
-			(project "Karane_Kicad"
+			(project "Inda_Kicad"
 				(path "/65dfbecc-0fbf-480c-951c-b0d4a210bc14/026b5258-1e8a-411a-a969-eda822940e0a"
 					(reference "R45")
 					(unit 1)
