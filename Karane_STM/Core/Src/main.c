@@ -28,7 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
 #include "string.h"
-#include "MPU6500_LIB.h"
+#include "LIB_MPU6500_SPI.h"
 #include "MOTORES_LIB.h"
 /* USER CODE END Includes */
 
@@ -154,7 +154,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  if(HAL_GPIO_ReadPin(PULSADOR_GPIO_Port, PULSADOR_Pin)==1)
+	  if(0)
 	  {
 		  //IniciarPID=true;
 
@@ -209,13 +209,22 @@ int main(void)
 		  valoresADC[2]=ADC_leer_Canal(4);
 		  Tiempo_Anterior_ADC=HAL_GetTick();
 	  }
+for(int x=0;x<16;x++)
+{
+	  Leer_sensores(true);
+}
+for(int x=0;x<16;x++)
+{
+	  sprintf(bufferTxt," A%d= %d ",x,RegletaSensores[x]);
+	  			  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+}
+  sprintf(bufferTxt," pos= %d ",UltimaPosicion);
+  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
 
-	  Leer_sensores(IniciarPID);
-
-
-
-
-
+	  			  sprintf(bufferTxt,"\r\n ");
+	  			  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+HAL_Delay(500);
+/*
 	  if(IniciarPID==true)
 	  {
 		  if(HAL_GetTick()-Tiempo_Anterior_PID>19)
@@ -237,7 +246,7 @@ int main(void)
 		  }
 
 	  }
-	  HAL_GPIO_TogglePin(LED_D_GPIO_Port, LED_D_Pin);
+	  HAL_GPIO_TogglePin(LED_D_GPIO_Port, LED_D_Pin);*/
 
 
 
