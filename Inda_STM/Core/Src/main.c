@@ -24,10 +24,12 @@
 #include "stdio.h"
 #include "string.h"
 #include "LIB_MPU6500_SPI.h"
+#include "LIB_Motores.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+Motores_Init	Motor;
 MPU6500_Init_Values_t 	MPU6500_Raw;
 MPU6500_Init_float_t	MPU6500_Conv;
 MPU6500_status_e	MPU6500_Status;
@@ -36,6 +38,11 @@ MPU6500_status_e	MPU6500_Status;
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 char bufferTxt[30];
+int32_t posicion_actual = 0;
+    int32_t posicion_anterior = 0;
+    int32_t delta_pasos = 0;
+    float velocidad_grande_rpm = 0.0f;
+    uint8_t divisor_1ms = 0;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -49,6 +56,7 @@ ADC_HandleTypeDef hadc2;
 
 SPI_HandleTypeDef hspi3;
 
+TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim4;
@@ -73,6 +81,7 @@ static void MX_ADC1_Init(void);
 static void MX_ADC2_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM12_Init(void);
+static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -120,21 +129,29 @@ int main(void)
   MX_ADC2_Init();
   MX_TIM3_Init();
   MX_TIM12_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
   HAL_Delay(500);
-  MPU6500_Status=MPU6500_Init(&MPU6500_Raw,50,DPS250,G2);
-  if (MPU6500_Status==MPU6500_fail) {
+  MPU6500_Status=MPU6500_Init(&MPU6500_Raw,100,DPS250,G2);
+  /*if (MPU6500_Status==MPU6500_fail) {
 	  for (;;) {
 		  sprintf(bufferTxt," Fallo al iniciar MPU\r\n ");
 		  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
 		  HAL_Delay(1000);
 	  }
-  }
+  }*/
   sprintf(bufferTxt,"Exito al iniciar MPU\r\n ");
   HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+  Motor.ENABLE=false;
+  Motor.PWM_ML=0;
+  Motor.PWM_ML=0;
+  Inicializar_Motores(&Motor);
+
+
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+
 
   HAL_TIM_PWM_Stop(&htim12, TIM_CHANNEL_1);
   HAL_TIM_PWM_Stop(&htim12, TIM_CHANNEL_2);
@@ -142,15 +159,21 @@ int main(void)
 
  EN_SENSORES_GPIO_Port->ODR&=~EN_SENSORES_Pin;
  MOTOR_EN_GPIO_Port->ODR&=~MOTOR_EN_Pin;
+ HAL_TIM_Encoder_Start(&htim2, TIM_CHANNEL_ALL);
+ HAL_TIM_Encoder_Start(&htim5, TIM_CHANNEL_ALL);
+ HAL_TIM_Base_Start_IT(&htim1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	   Motor.ENABLE=true;
 
-
-	  	 LED_OK_GPIO_Port->ODR|=LED_OK_Pin;
+Motor.PWM_ML=800;
+		  Motor.PWM_MR=00;
+		  PWM_Motores(&Motor);
+	  /*	 LED_OK_GPIO_Port->ODR|=LED_OK_Pin;
 	  		  HAL_Delay(300);
 
 	  LED_ALARMA_GPIO_Port->ODR|=LED_ALARMA_Pin;
@@ -170,7 +193,7 @@ int main(void)
 	  HAL_Delay(300);
 	  LED6_GPIO_Port->ODR|=LED6_Pin;
 	  HAL_Delay(300);
-
+*/
 
 	  LED_OK_GPIO_Port->ODR&=~LED_OK_Pin;
 	  LED_AVISO_GPIO_Port->ODR&=~LED_AVISO_Pin;
@@ -184,6 +207,11 @@ int main(void)
 	  LED6_GPIO_Port->ODR&=~LED6_Pin;
 
 	  HAL_Delay(1000);
+
+
+	  sprintf(bufferTxt," ML= %0.2f ",velocidad_grande_rpm);
+	  HAL_UART_Transmit(&huart1, (uint8_t *)bufferTxt, strlen(bufferTxt), HAL_MAX_DELAY);
+
 
 	  MPU6500_Read(&MPU6500_Raw);
 	  		MPU6500_Conv=MPU6500_Converter(&MPU6500_Raw);
@@ -385,6 +413,52 @@ static void MX_SPI3_Init(void)
   /* USER CODE BEGIN SPI3_Init 2 */
 
   /* USER CODE END SPI3_Init 2 */
+
+}
+
+/**
+  * @brief TIM1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM1_Init(void)
+{
+
+  /* USER CODE BEGIN TIM1_Init 0 */
+
+  /* USER CODE END TIM1_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM1_Init 1 */
+
+  /* USER CODE END TIM1_Init 1 */
+  htim1.Instance = TIM1;
+  htim1.Init.Prescaler = 0;
+  htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim1.Init.Period = 10499;
+  htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim1.Init.RepetitionCounter = 0;
+  htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM1_Init 2 */
+
+  /* USER CODE END TIM1_Init 2 */
 
 }
 
@@ -600,7 +674,7 @@ static void MX_TIM5_Init(void)
   htim5.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim5.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   sConfig.EncoderMode = TIM_ENCODERMODE_TI1;
-  sConfig.IC1Polarity = TIM_ICPOLARITY_RISING;
+  sConfig.IC1Polarity = TIM_ICPOLARITY_FALLING;
   sConfig.IC1Selection = TIM_ICSELECTION_DIRECTTI;
   sConfig.IC1Prescaler = TIM_ICPSC_DIV1;
   sConfig.IC1Filter = 0;
@@ -823,7 +897,38 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    // Verificamos que la interrupción provenga del TIM1
+    if (htim->Instance == TIM1)
+    {
+        // Este bloque se ejecuta exactamente cada 62.5 uS (16 kHz)
+    	divisor_1ms++;
+    	        if (divisor_1ms >= 16) // Equivale a exactamente cada 1 ms (16 * 62.5 uS)
+    	        {
+    	            divisor_1ms = 0; // Reiniciar el contador de tiempo
 
+    	            // 1. Leer el contador del Timer del encoder
+    	            posicion_actual = (int32_t)__HAL_TIM_GET_COUNTER(&htim2); // Cambia htim2 por tu timer del encoder
+
+    	            // 2. Calcular la diferencia de pasos en este milisegundo
+    	            delta_pasos = posicion_actual - posicion_anterior;
+
+    	            // OBLIGATORIO: Si tu timer de encoder es de 16 bits (como TIM3 o TIM4),
+    	            // descomenta la siguiente línea para que el desborde no rompa la matemática:
+    	            // delta_pasos = (int16_t)(posicion_actual - posicion_anterior);
+
+    	            // 3. Guardar la posición para el próximo ciclo de 1 ms
+    	            posicion_anterior = posicion_actual;
+
+    	            // 4. Aplicar la constante de conversión para las RPM del eje de 38 dientes
+    	            velocidad_grande_rpm = (float)delta_pasos * 3.469368f;
+    	        }
+
+
+        // HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+    }
+}
 /* USER CODE END 4 */
 
 /**
